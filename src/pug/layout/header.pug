@@ -1,28 +1,57 @@
 header.header
 	.container
 		.row
-			.col-10.col-offset-1
+			.col-10.offset-1
 				.header-content
-					.header-content__menu
-						.ic-hamburger-wrap
-							.ic-hamburger
-								span
+					.row
+						.col-4
+							.header-content__menu
+								.ic-hamburger-wrap
+									.ic-hamburger.js-open-menu
+										span
 
-							.ic-hamburger-label Меню
+									.ic-hamburger-label Меню
 
-					.header-content__info
-						.header-content__logo
-							img(src="/assets/img/logo.svg", alt="").header-content__logo-big
-							img(src="/assets/img/logo-hor.svg", alt="").header-content__logo-small
+						.col-4
+							.header-content__info
+								.header-content__logo
+									img(src="/assets/img/logo.svg", alt="").header-content__logo-big
+									img(src="/assets/img/logo-hor.svg", alt="").header-content__logo-small
 
-						.header-content__slogan Клиника эстетической медицины и косметологии SOLA
+								.header-content__slogan Клиника эстетической медицины и косметологии
 
-					.header-content__contacts
-						.header-content__phone
-							a(href="tel:+74958774531") +7 (495) 877-45-31
+						.col-4
+							.header-content__contacts
+								.header-content__phone
+									a(href="tel:+74958774531") +7 (495) 877-45-31
 
-						.header-social
-							.header-social__item
-								+svg('ic-intagram','ic-intagram', '27', '27')
-							.header-social__item
-								+svg('ic-facebook','ic-facebook', '27', '27')
+								.header-social
+									.header-social__item
+										a(href="#").header-social__link
+											+svg('ic-intagram','ic-intagram', '27', '27')
+									.header-social__item
+										a(href="#").header-social__link
+											+svg('ic-facebook','ic-facebook', '27', '27')
+
+
+					a(href="#").header-content__feedback Заказать звонок
+
+	nav.main-nav.js-main-nav
+		.main-nav__content
+			.container
+				.row
+					.col-10.offset-1
+						.main-nav__info
+							.main-nav__logo
+								img(src="/assets/img/logo.svg", alt="")
+
+							.main-nav__close
+								.ic-hamburger.active.js-close-menu
+									span
+
+							ul.main-menu
+								-
+									var list=['Уникальная технология', 'Этапы процедуры', 'Примеры работ', 'Отзывы', 'Стоимость', 'Врачи', 'FAQ', 'О компании', 'Контакты']
+								each item in list
+									li.main-menu__item
+										a(href="#").main-menu__link= item

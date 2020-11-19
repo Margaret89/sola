@@ -3,13 +3,15 @@ $path-img: "../img";
 $path-fonts: "../fonts";
 
 //Font
-$font-site:  'Raleway', Arial, sans-serif;
+$font-site: 'Raleway', Arial, sans-serif;
+$font-geometria: 'Geometria', Arial, sans-serif;
 
 // Site
 $color-text: #000;
 $color-green: #325d57;
 $color-brown: #563b2c;
 $color-brown-light: #d5b98b;
+$color-gold: #ead9bf;
 
 // Grid
 $grid-breakpoints: (
@@ -17,12 +19,12 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1400px
+  xl: 1440px
 ) !default;
 
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1360px
+  xl: 1390px
 ) !default;

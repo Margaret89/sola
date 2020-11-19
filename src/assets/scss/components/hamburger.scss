@@ -3,7 +3,7 @@
 	display: inline-flex;
 	align-items: center;
 
-	.ic-hamburger{margin-right: 10px;}
+	.ic-hamburger{margin-right: 23px;}
 }
 
 .ic-hamburger {
@@ -31,7 +31,7 @@
 		width: calc(100% - 7px);
 		height: 2px;
 		position: absolute;
-		top: 5px;
+		top: 7px;
 		left: 0;
 		right: 0px;
 		background: $color-green;
@@ -50,12 +50,12 @@
 	
 	 span::before {
 		width: calc(100% + 7px);
-		top: -5px;
+		top: -7px;
 	}
 	
 	span::after {
 		width: calc(100% - 7px);
-		bottom: -5px;
+		bottom: -7px;
 	}
 	
 	span::before {transition: top 0.3s ease 0.3s, transform 0.3s ease 0s;}
@@ -75,13 +75,26 @@
 		transform: rotate(-45deg);
 	}
 	
+	&.active{
+		width: 30px;
+		height: 30px;
+	}
+
+	&.active span{top: 10px;}
+	
 	&.active span::before {transition: top 0.3s ease 0s, transform 0.3s ease 0.3s;}
 	&.active span::after {transition: bottom 0.3s ease 0s, transform 0.3s ease 0.3s;}
+
+	&.active span,
+	&.active span::before,
+	&.active span::after{
+		width: 100%;
+	}
 	
 	&:hover span,
 	&:hover span::before,
 	&:hover span::after{
-		background-color: #818181;
+		background-color: $color-brown;
 	}
 	
 	&.active:hover span{
