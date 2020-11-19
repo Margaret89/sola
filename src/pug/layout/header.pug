@@ -1,4 +1,28 @@
 header.header
 	.container
 		.row
-			.col-12 header
+			.col-10.col-offset-1
+				.header-content
+					.header-content__menu
+						.ic-hamburger-wrap
+							.ic-hamburger
+								span
+
+							.ic-hamburger-label Меню
+
+					.header-content__info
+						.header-content__logo
+							img(src="/assets/img/logo.svg", alt="").header-content__logo-big
+							img(src="/assets/img/logo-hor.svg", alt="").header-content__logo-small
+
+						.header-content__slogan Клиника эстетической медицины и косметологии SOLA
+
+					.header-content__contacts
+						.header-content__phone
+							a(href="tel:+74958774531") +7 (495) 877-45-31
+
+						.header-social
+							.header-social__item
+								+svg('ic-intagram','ic-intagram', '27', '27')
+							.header-social__item
+								+svg('ic-facebook','ic-facebook', '27', '27')

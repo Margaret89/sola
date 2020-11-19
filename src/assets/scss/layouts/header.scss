@@ -1,0 +1,9 @@
+.header-content{
+	display: flex;
+	justify-content: space-between;
+
+	&__menu{padding-right: 15px;}
+	&__contacts{padding-left: 15px;}
+
+	&__info{padding: 0 15px;}
+}
