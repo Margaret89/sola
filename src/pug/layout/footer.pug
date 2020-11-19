@@ -1,4 +1,31 @@
 footer.footer
 	.container
 		.row
-			.col-12 footer
+			.col-10.offset-1
+				-
+					var list=['Уникальная технология', 'Этапы процедуры', 'Примеры работ', 'Отзывы', 'Стоимость', 'Врачи', 'FAQ', ' О компании', 'Контакты']
+				ul.footer-menu
+					each item in list
+						li.footer-menu__item
+							a(href="#").footer-menu__link= item
+
+				.footer__logo
+					img(src="/assets/img/logo-gold.svg", alt="")
+
+				.footer__develop Разработка сайта 
+					b Plan The Best
+
+				.footer__bottom
+					.footer__copyright ©2020 SOLA | Клиника эстетической медицины и косметологии.
+
+					.footer__contacts
+						.footer__phone
+							a(href="tel:+74958774531") +7 (495) 877-45-31
+
+						.footer-social
+							.footer-social__item
+								a(href="#").footer-social__link
+									+svg('ic-intagram','ic-intagram', '20', '20')
+							.footer-social__item
+								a(href="#").footer-social__link
+									+svg('ic-facebook','ic-facebook', '20', '20')
