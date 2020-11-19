@@ -1,0 +1,28 @@
+//Path
+$path-img: "../img";
+$path-fonts: "../fonts";
+
+//Font
+$font-site:  'Raleway', Arial, sans-serif;
+
+// Site
+$color-text: #000;
+$color-green: #325d57;
+$color-brown: #563b2c;
+$color-brown-light: #d5b98b;
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1360px
+) !default;
