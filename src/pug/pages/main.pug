@@ -1,0 +1,18 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Содержание';
+	- 
+		var pagelist = [
+			{href: 'main.html',name:'Главная'},
+			{href: 'tipografika.html',name:'Типографика'},
+		];
+
+block content
+	section
+		.container
+			.row
+				.col-12
+					.fff(style="height: 1000px;")
+
+

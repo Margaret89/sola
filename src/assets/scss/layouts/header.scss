@@ -5,6 +5,41 @@
 	background-size: cover;
 }
 
+.header-content-wrap{
+	&.fixed{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		border-bottom: 1px solid #e3e6db;
+
+		.header-content{
+			height: auto;
+			min-width: 80px;
+			padding: 26px 0;
+
+			&__feedback,
+			&__slogan,
+			&__logo-big{
+				display: none;
+			}
+
+			&__logo-small{
+				display: inline-block;
+				width: 123px;
+			}
+
+			&__phone{font-weight: 300;}
+
+			&__info{
+				max-width: auto;
+				text-align: center;
+			}
+		}
+	}
+}
+
 .header-content{
 	height: 100vh;
 	position: relative;

@@ -1,40 +1,41 @@
 header.header
-	.container
-		.row
-			.col-10.offset-1
-				.header-content
-					.row
-						.col-4
-							.header-content__menu
-								.ic-hamburger-wrap
-									.ic-hamburger.js-open-menu
-										span
+	.header-content-wrap#header-content-wrap
+		.container
+			.row
+				.col-10.offset-1
+					.header-content
+						.row
+							.col-4
+								.header-content__menu
+									.ic-hamburger-wrap
+										.ic-hamburger.js-open-menu
+											span
 
-									.ic-hamburger-label Меню
+										.ic-hamburger-label Меню
 
-						.col-4
-							.header-content__info
-								.header-content__logo
-									img(src="/assets/img/logo.svg", alt="").header-content__logo-big
-									img(src="/assets/img/logo-hor.svg", alt="").header-content__logo-small
+							.col-4
+								.header-content__info
+									.header-content__logo
+										img(src="/assets/img/logo.svg", alt="").header-content__logo-big
+										img(src="/assets/img/logo-hor.svg", alt="").header-content__logo-small
 
-								.header-content__slogan Клиника эстетической медицины и косметологии
+									.header-content__slogan Клиника эстетической медицины и косметологии
 
-						.col-4
-							.header-content__contacts
-								.header-content__phone
-									a(href="tel:+74958774531") +7 (495) 877-45-31
+							.col-4
+								.header-content__contacts
+									.header-content__phone
+										a(href="tel:+74958774531") +7 (495) 877-45-31
 
-								.header-social
-									.header-social__item
-										a(href="#").header-social__link
-											+svg('ic-intagram','ic-intagram', '27', '27')
-									.header-social__item
-										a(href="#").header-social__link
-											+svg('ic-facebook','ic-facebook', '27', '27')
+									.header-social
+										.header-social__item
+											a(href="#").header-social__link
+												+svg('ic-intagram','ic-intagram', '27', '27')
+										.header-social__item
+											a(href="#").header-social__link
+												+svg('ic-facebook','ic-facebook', '27', '27')
 
 
-					a(href="#").header-content__feedback Заказать звонок
+						a(href="#").header-content__feedback Заказать звонок
 
 	nav.main-nav.js-main-nav
 		.main-nav__content
@@ -55,3 +56,5 @@ header.header
 								each item in list
 									li.main-menu__item
 										a(href="#").main-menu__link= item
+
+#position-fixedmenu
