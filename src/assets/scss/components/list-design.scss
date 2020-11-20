@@ -1,0 +1,28 @@
+/*-------------- list-design -----------------*/
+.list-design{
+	&,
+	li{
+		@include reset-list;
+	}
+
+	li{
+		position: relative;
+		padding-left: 28px;
+		@include font(normal, normal, rem(18px), 1.2, $color-green);
+		letter-spacing: 0.2px;
+		text-transform: uppercase;
+		margin-bottom: 8px;
+	}
+
+	li::before{
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 14px;
+		height: 18px;
+		background: url(/assets/img/list-mark.png) no-repeat center;
+		position: absolute;
+		top: 2px;
+		left: 0;
+	}
+}

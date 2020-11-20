@@ -9,10 +9,33 @@ block variables
 		];
 
 block content
-	section
+	section.about-service
 		.container
 			.row
 				.col-12
-					.fff(style="height: 1000px;")
+					.about-service__top
+						.about-service__img
+							img(src="/assets/img/woman-lifting.jpg", alt="")
+
+						.about-service__info
+							.about-service__title Безоперационное лазерное омоложение
+								| 
+								span.about-service__title-accent Fotona 4D
+
+							.about-service__text глубокий лифтинг без наркоза, разрезов и боли
+
+		.container
+			.row
+				.col-10.offset-1
+					.about-service__content
+						.about-service__desc
+							ul.list-design
+								li Моментальный видимый эффект уже после первой процедуры
+								li Минимальный период реабилитации
+								li Без сезонных ограничений, в любое время года
+								li Комфортная процедура без анестезии
 
 
+						a(href="#").btn.btn_green.btn_big Записаться
+							br
+							|на консультацию

@@ -8,11 +8,12 @@
 .header-content-wrap{
 	&.fixed{
 		width: 100%;
+		background: #fff;
+		border-bottom: 1px solid #e3e6db;
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 1000;
-		border-bottom: 1px solid #e3e6db;
 
 		.header-content{
 			height: auto;

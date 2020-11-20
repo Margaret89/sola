@@ -105,6 +105,7 @@ button.btn{
 	cursor: pointer;
 	text-decoration: none;
 	min-width: 200px;
+	white-space: nowrap;
 	transition: all 0.3s ease 0s;
 	overflow: hidden;
 	position: relative;
@@ -194,19 +195,18 @@ button.btn_border.btn_green:hover{
 
 .btn_border.btn_green::after{background: $color-green;}
 
-// .btn_big,
-// input[type="submit"].btn_border,
-// button.btn_border{
-// 	background: transparent;
-// 	color: $color-brown-light;
-// }
+.btn_big,
+input[type="submit"].btn_big,
+button.btn_big{
+	height: auto;
+	white-space: normal;
+	max-width: 230px;
+	padding: 14px 10px 15px;
+	line-height: 1;
+}
 
-// .btn_border:hover,
-// input[type="submit"].btn_border:hover,
-// button.btn_border:hover{
-// 	background: $color-brown-light;
-// 	color: #fff;
-// }
+.btn_big::before{left: -6em;}
+.btn_big:hover::before{transform: skewX(-45deg) translateX(20em);}
 
 .code{
 	background-color: #f7f7f7;

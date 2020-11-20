@@ -1,0 +1,61 @@
+/*-------------- about-service -----------------*/
+.about-service{
+	padding: 175px 0 80px;
+	overflow: hidden;
+
+	&__top{
+		display: flex;
+		align-items: center;
+	}
+
+	&__img{
+		width: 69%;
+		position: relative;
+		text-align: right;
+
+		img{
+			border-radius: 0 184px 184px 0;
+			position: relative;
+		}
+	}
+
+	&__img::before{
+		content: '';
+		display: block;
+		height: 100%;
+		width: 5000px;
+		background: #f2f2f2;
+		border-radius: 0 184px 184px 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__info{
+		width: 41%;
+		margin-left: -19%;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__title{
+		@include font(normal, normal, rem(40px), 1, $color-green);
+		text-transform: uppercase;
+	}
+
+	&__title-accent{font-weight: bold;}
+
+	&__text{
+		@include font(normal, 300, rem(21px), 1, $color-text);
+		margin-top: 4px;
+	}
+
+	&__content{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-top: 70px;
+	}
+
+	&__desc{padding-right: 30px;}
+}
