@@ -1,0 +1,46 @@
+/*-------------- desc-service -----------------*/
+.desc-service{
+	background: #e3e6db url(/assets/img/bg-girl.png) no-repeat calc(50% + 265px) 100%;
+	padding: 95px 20px;
+
+	&__title{
+		@include font(normal, normal, rem(40px), 1, $color-brown);
+		letter-spacing: 0.2px;
+		margin-bottom: 84px;
+	}
+
+	&__text{
+		@include font(normal, 300, rem(16px), 1.3, $color-text);
+		column-count: 2;
+		column-gap: 56px;
+	}
+
+	.desc-service-adv{margin-top: 80px;}
+}
+
+.desc-service-adv{
+	&__content{
+		display: inline-flex;
+		align-items: center;
+		flex-wrap: wrap;
+		background: #fff;
+		padding: 10px;
+	}
+
+	&__item{
+		display: inline-flex;
+		align-items: center;
+		padding: 0 10px;
+	}
+
+	&__icon{
+		max-width: 66px;
+		margin-right: 23px;
+	}
+
+	&__text{
+		max-width: 170px;
+		@include font(normal, bold, rem(14px), 1.3, $color-brown-light);
+		text-transform: uppercase;
+	}
+}
