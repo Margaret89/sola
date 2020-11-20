@@ -1,0 +1,53 @@
+/*-------------- laser-system -----------------*/
+.laser-system{
+	padding: 84px 0;
+
+	&__content{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__autor-wrap{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 232px;
+	}
+
+	&__autor{margin-bottom: 20px;}
+
+	&__img{
+		max-width: 465px;
+	}
+
+	&__info{
+		max-width: calc(100% - 865px);
+		margin: 0 30px;
+	}
+
+	&__title{
+		@include font(normal, 300, rem(24px), 1, $color-text);
+		margin-bottom: 23px;
+	}
+
+	&__text{
+		@include font(normal, 300, rem(16px), 1.3, $color-text);
+		letter-spacing: 0.1px;
+
+		p:last-child{margin-bottom: 0;}
+	}
+
+	&__desc{
+		@include font(normal, 300, rem(16px), 1.3, $color-text);
+		letter-spacing: 0.1px;
+		margin-top: 15px;
+		padding-left: 30px;
+
+		p:last-child{margin-bottom: 0;}
+	}
+
+	&__accent{
+		font-weight: 600;
+		font-style: italic;
+	}
+}

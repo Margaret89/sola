@@ -30,7 +30,7 @@ a{
 
 a:hover{text-decoration: none;}
 b{font-weight: bold;}
-p{padding: 0 0 10px;}
+p{margin: 0 0 24px;}
 
 h1,.h1,
 h2,.h2,
@@ -170,7 +170,7 @@ button.btn_border{
 	left: 50%;
 	transform: translate(-50%,-50%) rotate(-45deg);
 	z-index: -1;
-	transition: all 0.3s ease;
+	transition: all 0.3s linear;
 }
 
 .btn_border:hover,
