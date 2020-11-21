@@ -1,4 +1,4 @@
-import {$} from './common';
+import {$, Inputmask} from './common';
 
 // Открыть/Закрыть мобильное меню
 $('.js-open-menu').on('click', function(){
@@ -61,6 +61,8 @@ function showHeaderScroll(selPos, fixedMenu) {
 		slidesToScroll: 2,
 	});
 
+// Маска для телефона 
+Inputmask("+7 (999) 999-9999").mask('.js-phone');
 
 
 // $(window).scroll(function(){

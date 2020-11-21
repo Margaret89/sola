@@ -243,3 +243,88 @@ block content
 													+svg('ic-pulms-down','ic-pulms-down', '23', '22')
 
 						a(href="#").review__more Показать еще отзывы
+
+	section.price-wrap
+		.container
+			.row
+				.col-6.offset-3
+					.prices
+						.prices__title Стоимость лазерного омоложения <b>Fotona</b>
+
+						.prices-table
+							.prices-table__head
+								.prices-table__title Услуга
+								.prices-table__title Новая<br>цена
+								.prices-table__title Старая<br>цена
+
+							.prices-table__row
+								.prices-table__item
+									.prices-table__name <b>FOTONA 4D</b> многоуровневое омоложение лица
+
+								.prices-table__item
+									.prices-table__price 27 000
+										| 
+										span.prices-table__currency руб.
+
+								.prices-table__item
+									.prices-table__old-price 30 000 руб.
+
+							.prices-table__row
+								.prices-table__item
+									.prices-table__name <b>FOTONA 4D</b> многоуровневое омоложение лица
+										br
+										|(Курс из 3-х процедур)
+
+								.prices-table__item
+									.prices-table__price 76 500
+										| 
+										span.prices-table__currency руб.
+
+								.prices-table__item
+									.prices-table__old-price 90 000 руб.
+
+
+		.form-sale-wrap
+			.container
+				.row
+					.col-12
+						.form-sale-wrap__img
+							img(src="/assets/img/form-sale-girl.png", alt="")
+
+						.row
+							.col-5.offset-2
+								.form-sale
+									.form-sale__top
+										.form-sale__title Только до 30 сентября!
+										.form-sale__text При покупке 3-х процедур скидка
+
+									.form-sale__content
+										.form-sale__field
+											.form-sale__label Имя
+											.form-sale__input
+												input(type="text")
+
+										.form-sale__field
+											.form-sale__label Ваш номер телефона
+											.form-sale__input
+												input(type="text", class="js-phone")
+
+									.form-sale__bottom
+										.form-sale__polit
+											.input-check
+												input#checkbox1(type='checkbox', checked='checked')
+												label.input-check__label(for='checkbox1')
+													span.input-check__mark
+														+svg('ic-check','ic-check', '21', '16')
+														
+													span.input-check__text Нажимая кнопку, Вы соглашаетесь с обработкой
+														| 
+														a(href="#") персональных данныx
+
+										a(href="#").btn.btn_green.btn_big Записаться
+											br
+											|на консультацию
+
+									.form-sale__sale
+										span 15
+											span.form-sale__percent %
