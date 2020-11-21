@@ -61,6 +61,17 @@ function showHeaderScroll(selPos, fixedMenu) {
 		slidesToScroll: 2,
 	});
 
+// Слайдер специалистов
+	$('.js-team-slider').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true,
+		arrows: false,
+		dots: true,
+  		centerPadding: '0',
+	});
+
 // Маска для телефона 
 Inputmask("+7 (999) 999-9999").mask('.js-phone');
 

@@ -328,3 +328,47 @@ block content
 									.form-sale__sale
 										span 15
 											span.form-sale__percent %
+
+
+	section.team-wrap
+		.team
+			.container
+				.row
+					.col-6.offset-3
+						.team__title Процедуру проводят дипломированные специалисты
+
+			.team-slider.js-team-slider
+				-
+					var list=[
+						{img:'alex.jpg', name:'Овчинникова А. В.', post:'Врач-косметолог. Врач-дерматовенеролог.', text:'Дипломированный специалист в области аппаратной и инъекционной косметологии.', exper:'Опыт работы с 2016 г.'},
+						{img:'maka.jpg', name:'Зинова М. А.', post:'Врач-косметолог.', text:'Дипломированный специалист.', exper:'Опыт работы с 2014 г.'},
+						{img:'dina.jpg', name:'Симкина Д. Н.', post:'Врач-косметолог. Врач-дерматовенеролог.', text:'Дипломированный специалист в области.', exper:'Опыт работы с 2016 г.'},
+						{img:'alex2.jpg', name:'Овчинникова А. В.', post:'Врач-косметолог. Врач-дерматовенеролог.', text:'Дипломированный специалист в области аппаратной и инъекционной косметологии.', exper:'Опыт работы с 2016 г.'},
+						{img:'maka2.jpg', name:'Зинова М. А.', post:'Врач-косметолог.', text:'Дипломированный специалист.', exper:'Опыт работы с 2014 г.'},
+						{img:'dina2.jpg', name:'Симкина Д. Н.', post:'Врач-косметолог. Врач-дерматовенеролог.', text:'Дипломированный специалист в области.', exper:'Опыт работы с 2016 г.'},
+						{img:'alex3.jpg', name:'Овчинникова А. В.', post:'Врач-косметолог. Врач-дерматовенеролог.', text:'Дипломированный специалист в области аппаратной и инъекционной косметологии.', exper:'Опыт работы с 2016 г.'},
+						{img:'maka3.jpg', name:'Зинова М. А.', post:'Врач-косметолог.', text:'Дипломированный специалист.', exper:'Опыт работы с 2014 г.'},
+						{img:'dina3.jpg', name:'Симкина Д. Н.', post:'Врач-косметолог. Врач-дерматовенеролог.', text:'Дипломированный специалист в области.', exper:'Опыт работы с 2016 г.'},
+					]
+				each item in list
+					.team-slider__item
+						//- .team-slider__img(style="background-image: url(/assets/img/"+item.img+")")
+						.team-slider__img
+							img(src="/assets/img/"+item.img, alt="")
+
+						.team-slider__content
+							.team-slider__name= item.name
+							.team-slider__post= item.post
+							.team-slider__text= item.text
+							.team-slider__exper= item.exper
+							.team-slider__more
+								a(href="#") Подробнее о враче
+
+
+			.container
+				.row
+					.col-11
+						.team__btn
+							.btn.btn_border.btn_green.btn_big Записаться
+								br
+								|на консультацию
