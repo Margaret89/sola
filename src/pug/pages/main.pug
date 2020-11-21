@@ -209,3 +209,37 @@ block content
 						a(href="#").btn.btn_green.btn_big Записаться
 							br
 							|на консультацию
+
+	section.review-wrap
+		.container
+			.row
+				.col-6.offset-3
+					.review
+						.review__title Отзывы тех, кто уже доверил нам уход за своей красотой
+
+						.review__list
+							- for (var x = 0; x < 3; x++)
+								.review__item
+									.review__img(style="background-image: url(/assets/img/ava.jpg)")
+
+									.review__content
+										.review__top
+											.review__name Andrew
+											.rating
+												.rating__content(style="width: 80%;")
+
+										.review__text Замечательная клиника, действительно разбираются с проблемами и помогают. Рекомендую! :)
+
+										.review__bottom
+											.review__date 12 Сентября 2019
+
+											.like
+												.like__like
+													+svg('ic-pulms-up','ic-pulms-up', '23', '22')
+
+												.like__text 18 нравится
+
+												.like__dislike
+													+svg('ic-pulms-down','ic-pulms-down', '23', '22')
+
+						a(href="#").review__more Показать еще отзывы

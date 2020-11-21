@@ -1,0 +1,38 @@
+/*-------------- like -----------------*/
+.like{
+	display: inline-flex;
+	align-items: center;
+
+	&__like,
+	&__dislike{
+		cursor: pointer;
+		margin-top: -3px;
+	}
+
+
+	&__like{
+		margin-right: 5px;
+
+		.icon{
+			fill: $color-green;
+			transition: all 0.3s ease 0s;
+		}
+	}
+
+	&__like:hover .icon{fill: #2b7268;}
+
+	&__dislike{
+		margin-left: 5px;
+
+		.icon{
+			fill: #b3b3b3;
+			transition: all 0.3s ease 0s;
+		}
+	}
+
+	&__dislike:hover .icon{fill: #2b7268;}
+
+	&__text{
+		@include font(normal, bold, rem(14px), 1, $color-green);
+	}
+}

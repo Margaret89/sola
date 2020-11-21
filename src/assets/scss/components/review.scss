@@ -1,0 +1,103 @@
+/*-------------- review -----------------*/
+.review-wrap{
+	background: url(/assets/img/bg-revew.jpg) repeat-x center;
+	margin: 137px 0;
+}
+
+.review{
+	&__title{
+		@include font(normal, 300, rem(35px), 1.15, $color-brown);
+		letter-spacing: 0.4px;
+		margin-bottom: 44px;
+	}
+
+	&__list{
+		background: #fff;
+		border: 1px solid #e3e6db;
+		padding: 35px 38px;
+	}
+
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&__item:not(:last-child){
+		padding-bottom: 37px;
+		margin-bottom: 35px;
+	}
+
+	&__item:not(:last-child)::after{
+		content: '';
+		display: inline-block;
+		width: 87px;
+		height: 1px;
+		background: $color-brown;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	&__img{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #b8b8b8;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	&__content{width: calc(100% - 80px);}
+
+	&__top{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 12px;
+		margin-top: -6px;
+	}
+
+	&__name{
+		@include font(normal, 600, rem(18px), 1.2, $color-text);
+	}
+
+	&__text{
+		@include font(normal, normal, rem(14px), 1, $color-text);
+		letter-spacing: 0.2px;
+	}
+
+	&__bottom{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+
+	&__date{
+		@include font(normal, normal, rem(14px), 1, #b8b8b8);
+		margin-right: 20px;
+	}
+
+	&__more{
+		display: block;
+		padding: 15px;
+		background: #e3e6db;
+		@include font(normal, normal, rem(18px), 1, $color-brown);
+		letter-spacing: 0.2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 40px;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__more:hover{
+		background: $color-green;
+		color: #fff;
+	}
+}
