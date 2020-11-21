@@ -1,0 +1,50 @@
+/*-------------- result -----------------*/
+.result-wrap{
+	padding: 147px 0 125px;
+	background: url(/assets/img/gold-scroll.svg) no-repeat -225px -275px;
+
+	&__title{
+		@include font(normal, 500, rem(35px), 1.15, $color-text);
+		text-align: center;
+		letter-spacing: 0.4px;
+		margin-bottom: 65px;
+	}
+}
+
+.result-list{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	&__item{
+		display: flex;
+		width: calc(33.33% - 30px);
+		margin: 0 15px 40px;
+	}
+
+	&__item:nth-child(3n){justify-content: flex-end;}
+	&__item:nth-child(3n+2){justify-content: center;}
+
+	&__content{max-width: 235px;}
+	&__img{margin-bottom: 14px;}
+
+	&__text{
+		@include font(normal, 600, rem(18px), 1, $color-brown-light);
+		letter-spacing: 0.2px;
+		padding-bottom: 15px;
+		position: relative;
+	}
+
+	&__text::after{
+		content: '';
+		display: inline-block;
+		vertical-align: top;
+		width: 84px;
+		height: 2px;
+		background: $color-brown-light;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}

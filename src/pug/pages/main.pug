@@ -157,3 +157,27 @@ block content
 
 									.slider-procedure__more
 										a(href="#") Подробнее о враче
+
+	section.result-wrap
+		.container
+			.row
+				.col-10.offset-1
+					.result-wrap__title Результат заметен уже после первой процедуры!
+
+					.result-list
+						-
+							var list=[
+								{img:'result1.jpg', text:'Кожа приобретает здоровое естественное сияние'},
+								{img:'result2.jpg', text:'Уходят брыли и второй подбородок'},
+								{img:'result3.jpg', text:'Овал и контуры лица становится более четкими'},
+								{img:'result4.jpg', text:'Устраняются пигментация, темные круги и мешки под глазами'},
+								{img:'result5.jpg', text:'Кожа становится более плотной и упругой'},
+								{img:'result6.jpg', text:'Разглаживаются мимические и возрастные морщины'},
+							]
+
+						each item in list
+							.result-list__item
+								.result-list__content
+									.result-list__img
+										img(src="/assets/img/"+item.img, alt="")
+									.result-list__text= item.text
