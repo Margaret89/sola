@@ -112,9 +112,32 @@ if($('.js-gallery-info').length){
 		$(this).addClass('active');
 		$(this).parents('.js-gallery-info').find('[data-img="'+curImg+'"]').addClass('active');
 	});
-	
 }
-	
+
+// Yandex карта
+// Yandex карта
+if ($('.js-map').length) {
+	// Иницилизация карты
+	ymaps.ready(init);
+
+	function init(){
+		var myMap;
+
+		myMap = new ymaps.Map("map", {
+			center: [55.702, 37.496],
+			zoom: 16,
+			controls: []
+		});
+
+		var myPlacemark = new ymaps.Placemark([55.70201117492125, 37.4965199128362] , {},
+			{ iconLayout: 'default#image',
+			iconImageHref: '/assets/img/mark-map.png',
+			iconImageSize: [40, 57],
+			iconImageOffset: [-20, -57] });
+
+			myMap.geoObjects.add(myPlacemark);
+	}
+}
 
 
 

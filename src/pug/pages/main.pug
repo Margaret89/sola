@@ -528,3 +528,37 @@ block content
 							.gallery-info-thumb__more Больше
 								br
 								|фото
+
+	section.contacts-wrap.bg-grey
+		.container
+			.row
+				.col-10.offset-1
+					.h2 Контакты
+
+					.contacts
+						.contacts__item
+							.contacts__icon
+								+svg('ic-location','ic-location', '13', '18')
+							.contacts__text г. Москва, ул. Столетова, 19
+
+						.contacts__item
+							.contacts__icon
+								+svg('ic-time','ic-time', '19', '19')
+							.contacts__text Ежедневно с 10:00-22:00
+
+						.contacts__item
+							.contacts__icon
+								+svg('ic-phone','ic-phone', '18', '18')
+							.contacts__text
+								a(href="tel:+74958774531") +7 (495) 877-45-31
+
+						.contacts__item
+							.contacts__icon
+								+svg('ic-mail','ic-mail', '22', '15')
+							.contacts__text
+								a(href="mailto:contact@solaclinica.ru") contact@solaclinica.ru
+
+			.row
+				.col-8.offset-2
+					#map.map.js-map
+					script(src='http://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript')
