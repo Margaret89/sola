@@ -480,3 +480,51 @@ block content
 									a(href="#").btn.btn_border.btn_green.btn_big Записаться
 										br
 										|на консультацию
+
+	section.gallery-info-wrap
+		.container
+			.row
+				.col-10.offset-1
+					.gallery-info.js-gallery-info
+						.gallery-info__main
+							-
+								var list=[
+									{img:'gallery-info1.jpg', title:'Заголовок', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident'},
+									{img:'gallery-info2.jpg', title:'Заголовок2', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.'},
+									{img:'gallery-info3.jpg', title:'Заголовок3', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+									{img:'gallery-info4.jpg', title:'Заголовок4', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+									{img:'gallery-info5.jpg', title:'Заголовок5', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident'},
+									{img:'gallery-info6.jpg', title:'Заголовок6', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.'},
+									{img:'gallery-info7.jpg', title:'Заголовок7', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proidentLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'},
+									{img:'gallery-info8.jpg', title:'Заголовок8', text:'Lorem ipsum dolor sit amet. Excepteur sint occaecat cupidatat non proident'},
+									{img:'gallery-info9.jpg', title:'Заголовок9', text:'Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident'},
+								]
+
+							each item, index in list
+								.gallery-info__item.js-gallery-info-item(data-img=index)
+									.gallery-info__img(style="background-image: url(/assets/img/"+item.img+")")
+									.gallery-info__content
+										.gallery-info__title= item.title
+										.gallery-info__text= item.text
+
+
+						.gallery-info-thumb
+							-
+								var list=[
+									{img:'gallery-info1.jpg'},
+									{img:'gallery-info2.jpg'},
+									{img:'gallery-info3.jpg'},
+									{img:'gallery-info4.jpg'},
+									{img:'gallery-info5.jpg'},
+									{img:'gallery-info6.jpg'},
+									{img:'gallery-info7.jpg'},
+									{img:'gallery-info8.jpg'},
+									{img:'gallery-info9.jpg'},
+								]
+
+							each item, index in list
+								.gallery-info-thumb__item.js-gallery-info-thumb-item(style="background-image: url(/assets/img/"+item.img+")", data-img=index)
+
+							.gallery-info-thumb__more Больше
+								br
+								|фото
