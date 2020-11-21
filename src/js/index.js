@@ -9,7 +9,7 @@ $('.js-close-menu').on('click', function(){
 	$('.js-body').removeClass('no-scroll open-menu');
 });
 
-// Fixed Menu 
+// Фиксированное меню
 showHeaderScroll('position-fixedmenu', 'header-content-wrap');
 
 function showHeaderScroll(selPos, fixedMenu) {
@@ -18,11 +18,6 @@ function showHeaderScroll(selPos, fixedMenu) {
 	if (positionSensor) {
 		var fixedMenu = document.getElementById(fixedMenu);
 		var sensorTopPos = positionSensor.getBoundingClientRect().top;
-		var typeMenu = '';
-
-		// if ($(fixedMenu).hasClass('opacity')) {
-		// 	typeMenu = 'opacity';
-		// }
 
 		var menuHidden = true;
 		if (sensorTopPos <= 0) {
@@ -41,9 +36,6 @@ function showHeaderScroll(selPos, fixedMenu) {
 				}
 
 				$(fixedMenu).addClass('fixed');
-				// if (typeMenu == 'opacity') {
-				// 	$(fixedMenu).removeClass('opacity');
-				// }
 			} else if (sensorTopPos > 0) {
 				if (!menuHidden) {
 					$(fixedMenu).animate({ top: "0" }, { duration: 0, easing: "linear" });
@@ -51,13 +43,17 @@ function showHeaderScroll(selPos, fixedMenu) {
 				}
 
 				$(fixedMenu).removeClass('fixed');
-				// if (typeMenu == 'opacity') {
-				// 	$(fixedMenu).addClass('opacity');
-				// }
 			}
 		});
 	}
 }
+
+// Слайдер процедур
+	$('.js-slider-procedure').slick({
+		arrows: false,
+		dots: true,
+	});
+
 
 
 // $(window).scroll(function(){
