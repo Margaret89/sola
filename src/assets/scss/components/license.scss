@@ -1,0 +1,50 @@
+/*-------------- license -----------------*/
+.license-wrap{
+	h2,
+	.h2{
+		margin-bottom: 40px;
+		text-align: center;
+	}
+}
+
+.license-list{
+	background: url(/assets/img/pattern.jpg) repeat-x center;
+
+	&__content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__item{
+		width: 260px;
+		height: 353px;
+		background: url(/assets/img/border.jpg) no-repeat center;
+		background-size: contain;
+		padding: 26px;
+		position: relative;
+		margin: 30px 50px;
+
+		img{max-height: 100%;}
+	}
+
+	&__item::after{
+		content: '';
+		display: inline-block;
+		vertical-align: top;
+		width: 300px;
+		height: 16px;
+		background: url(/assets/img/glass.png) no-repeat top center;
+		background-size: contain;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__item.active{transform: scale(1.2);}
+
+	&__link{
+		cursor: url(/assets/img/search.svg) 20 20, auto;
+	}
+}
