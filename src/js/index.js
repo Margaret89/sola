@@ -54,6 +54,13 @@ function showHeaderScroll(selPos, fixedMenu) {
 		dots: true,
 	});
 
+// Слайдер работ
+	$('.js-work-slider').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+	});
+
 
 
 // $(window).scroll(function(){

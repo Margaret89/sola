@@ -1,0 +1,83 @@
+/*-------------- present-work -----------------*/
+.present-work-wrap{margin: 78px 0;}
+
+.present-work{
+	&__content{
+		border: 7px solid $color-gold;
+		padding: 40px 25px 28px;
+		position: relative;
+	}
+
+	&__img{
+		height: calc(100% + 100px);
+		position: absolute;
+		top: -38px;
+		left: -267px;
+
+		img{max-height: 100%;}
+	}
+
+	&__info{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__title{
+		@include font(normal, normal, rem(35px), 1.15, $color-brown);
+		text-transform: uppercase;
+		letter-spacing: 0.4px;
+		margin-left: 22.5%;
+		margin-bottom: 65px;
+	}
+
+	&__more{
+		@include font(normal, bold, rem(18px), 1.2, $color-brown-light);
+		text-align: right;
+		margin-top: 20px;
+		padding-right: 17px;
+	}
+
+	&__btn{
+		text-align: right;
+		margin-top: 50px;
+	}
+
+	&__slider{
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.work-slider{
+	width: 380px;
+	margin: 0 40px;
+
+	&__item{
+		max-width: 190px;
+		padding: 0 15px;
+	}
+
+	.slick-arrow{
+		display: inline-block;
+		vertical-align: top;
+		width: 20px;
+		height: 24px;
+		position: absolute;
+		@include top-center;
+		font-size: 0;
+		border: 0;
+		outline: 0;
+		padding: 0;
+		box-shadow: none;
+		cursor: pointer;
+		z-index: 2;
+	}
+
+	.slick-prev{background: url(/assets/img/slider-arr-left.svg) no-repeat center; left: -28px;}
+	.slick-next{background: url(/assets/img/slider-arr-right.svg) no-repeat center; right: -28px;}
+	.slick-prev:hover{background: url(/assets/img/slider-arr-left-active.svg) no-repeat center;}
+	.slick-next:hover{background: url(/assets/img/slider-arr-right-active.svg) no-repeat center;}
+}

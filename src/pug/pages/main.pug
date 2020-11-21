@@ -181,3 +181,31 @@ block content
 									.result-list__img
 										img(src="/assets/img/"+item.img, alt="")
 									.result-list__text= item.text
+
+	section.present-work-wrap
+		.container
+			.row
+				.col-10.offset-1
+					.present-work__content
+						.present-work__img
+							img(src="/assets/img/present-work.png", alt="")
+
+						.present-work__info
+							.present-work__title После курса процедур видимый эффект омоложения кожи сохраняется до <b>5 лет!</b>
+
+							.present-work__slider
+								.work-slider.js-work-slider
+									-
+										var list=['work-slide1.jpg', 'work-slide2.jpg', 'work-slide3.jpg', 'work-slide4.jpg', 'work-slide5.jpg', 'work-slide6.jpg']
+
+									each item in list
+										.work-slider__item
+											img(src="/assets/img/"+item, alt="")
+
+							.present-work__more
+								a(href="#") Примеры работ
+
+					.present-work__btn
+						a(href="#").btn.btn_green.btn_big Записаться
+							br
+							|на консультацию
