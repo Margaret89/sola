@@ -1,0 +1,39 @@
+/*-------------- about-company -----------------*/
+.about-company-wrap{
+	background: url(/assets/img/bg-company.jpg) no-repeat top center;
+	margin: 386px 0 100px;
+}
+
+.about-company{
+	padding: 68px 0;
+	position: relative;
+
+	&__img{
+		position: absolute;
+		top: -115px;
+		right: 0;
+		margin-right: -100px;
+	}
+
+	&__title{
+		max-width: 730px;
+		@include font(normal, 300, rem(35px), 1.15, $color-green);
+		text-transform: uppercase;
+		letter-spacing: 0.2px;
+		margin-bottom: 56px;
+	}
+
+	&__text{
+		max-width: 625px;
+		@include font(normal, normal, rem(16px), 1.125, $color-brown);
+		letter-spacing: 0.2px;
+
+		p{margin-bottom: 20px;}
+	}
+
+	&__btn{
+		max-width: 565px;
+		text-align: right;
+		margin-top: 65px;
+	}
+}
