@@ -37,3 +37,22 @@
 		margin-top: 65px;
 	}
 }
+
+@media (max-width: 1599px) {
+	.about-company{
+		&__img{margin-right: 0;}
+	}
+}
+
+@media (max-width: 1239px) {
+	.about-company-wrap{margin-top: 150px;}
+
+	.about-company{
+		&__img{display: none;}
+	}
+}
+
+@media (max-width: 991px) {
+	.about-company-wrap{margin-top: 100px;}
+	.about-company__btn{max-width: 100%;}
+}

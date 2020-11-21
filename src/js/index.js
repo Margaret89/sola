@@ -74,7 +74,16 @@ function showHeaderScroll(selPos, fixedMenu) {
 		centerMode: true,
 		arrows: false,
 		dots: true,
-  		centerPadding: '0',
+		centerPadding: '0',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '250px',
+				}
+			},
+		]
 	});
 
 // Маска для телефона 

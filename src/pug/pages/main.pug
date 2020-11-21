@@ -43,11 +43,11 @@ block content
 	section.desc-service.bg-grey
 		.container
 			.row
-				.col-8.offset-1
+				.col-md-8.offset-md-1
 					.desc-service__title Многоуровневое дермальное омоложение <b>Fotona 4D</b> — инновационная методика для впечатляющих результатов
 					.desc-service__text Лазерное омоложение Fotona 4D (Fotona Technology) – это запатентованный безболезненный метод фототермической реконструкции кожи, признанный во всем мире одним из самых комфортных, безопасных и эффективных методов омоложения. Это уникальная для России технология, которая показывает гарантированный результат и при этом не требует подготовки и восстановительного периода. В рамках одной процедуры выполняется комплекс из 4-х запатентованных anti-aging технологий, восстанавливающих поверхностные, средние и глубокие структуры кожи. Реконструкция тканей лица проводится одновременно с внутренней и внешней стороны, поэтому женщинам дается уникальная возможность получить эффект лифтинга и помолодеть быстро, всего за 1 сеанс.
 
-		.desc-service__bg.d-md-none
+		.desc-service__bg.d-sm-none
 			img(src="/assets/img/bg-girl.png", alt="")
 
 		.desc-service-adv
@@ -185,7 +185,7 @@ block content
 	section.present-work-wrap
 		.container
 			.row
-				.col-10.offset-1
+				.col-md-10.offset-md-1
 					.present-work__content
 						.present-work__img
 							img(src="/assets/img/present-work.png", alt="")
@@ -213,7 +213,7 @@ block content
 	section.review-wrap
 		.container
 			.row
-				.col-6.offset-3
+				.col-md-8.offset-md-2.col-lg-6.offset-lg-3
 					.review
 						.review__title Отзывы тех, кто уже доверил нам уход за своей красотой
 
@@ -247,7 +247,7 @@ block content
 	section.price-wrap
 		.container
 			.row
-				.col-6.offset-3
+				.col-md-8.offset-md-2.col-lg-6.offset-lg-3
 					.prices
 						.prices__title Стоимость лазерного омоложения <b>Fotona</b>
 
@@ -292,7 +292,7 @@ block content
 							img(src="/assets/img/form-sale-girl.png", alt="")
 
 						.row
-							.col-5.offset-2
+							.col-md-8.offset-md-2.col-lg-5.offset-lg-2
 								form.form-sale
 									.form-sale__top
 										.form-sale__title Только до 30 сентября!
@@ -334,7 +334,7 @@ block content
 		.team
 			.container
 				.row
-					.col-6.offset-3
+					.col-md-6.offset-md-3
 						.team__title Процедуру проводят дипломированные специалисты
 
 			.team-slider.js-team-slider
@@ -367,7 +367,7 @@ block content
 
 			.container
 				.row
-					.col-11
+					.col-lg-11
 						.team__btn
 							a(href="#").btn.btn_border.btn_green.btn_big Записаться
 								br
@@ -380,7 +380,7 @@ block content
 					.h2 Часто задаваемые вопросы
 
 			.row
-				.col-4.offset-4
+				.col-md-6.offset-md-3.col-lg-4.offset-lg-4
 					-
 						var list=[
 							{title:'Когда ждать результат?', text:'Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор.'},
@@ -399,7 +399,7 @@ block content
 							.unwrap-block__content.js-unwrap-content= item.text
 			
 			.row
-				.col-8.offset-2
+				.col-lg-8.offset-lg-2
 					.form-call
 						.form-call__info
 							.form-call__title Не нашли ответ на свой вопрос?
@@ -440,13 +440,13 @@ block content
 	section.license-wrap
 		.container
 			.row
-				.col-10.offset-1
+				.col-lg-10.offset-lg-1
 					.h2 Лицензии
 
 		.license-list
 			.container
 				.row
-					.col-10.offset-1
+					.col-lg-10.offset-lg-1
 						.license-list__content
 							.license-list__item
 								a(href="/assets/img/license1.jpg" data-fancybox="images").license-list__link
@@ -469,7 +469,7 @@ block content
 							img(src="/assets/img/company-girl.png", alt="")
 
 						.row
-							.col-8.offset-2
+							.col-md-8.offset-md-2
 								.about-company__title Клиника SOLA - ваш путь к гармонии и уверенности в себе
 
 								.about-company__text
@@ -484,7 +484,7 @@ block content
 	section.gallery-info-wrap
 		.container
 			.row
-				.col-10.offset-1
+				.col-lg-10.offset-lg-1
 					.gallery-info.js-gallery-info
 						.gallery-info__main
 							-
@@ -559,6 +559,6 @@ block content
 								a(href="mailto:contact@solaclinica.ru") contact@solaclinica.ru
 
 			.row
-				.col-8.offset-2
+				.col-md-8.offset-md-2
 					#map.map.js-map
 					script(src='http://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript')

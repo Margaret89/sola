@@ -50,3 +50,35 @@
 		cursor: url(/assets/img/search.svg) 20 20, auto;
 	}
 }
+
+@media (max-width: 1389px) {
+	.license-list{
+		&__item{margin: 30px;}
+	}
+}
+
+@media (max-width: 1239px) {
+	.license-list{
+		&__item{
+			width: 240px;
+			height: 326px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.license-wrap{margin-bottom: 80px;}
+
+	.license-list{
+		&__item{
+			width: 160px;
+			height: 218px;
+			padding: 15px;
+		}
+
+		&__item::after{
+			width: 183px;
+			height: 10px;
+		}
+	}
+}

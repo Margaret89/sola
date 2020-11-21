@@ -25,7 +25,7 @@
 		align-items: center;
 		flex-wrap: wrap;
 		background: #fff;
-		padding: 28px 10px;
+		padding: 18px 10px;
 		position: relative;
 	}
 
@@ -45,7 +45,7 @@
 	&__item{
 		display: inline-flex;
 		align-items: center;
-		padding: 0 10px;
+		padding: 10px;
 	}
 
 	&__icon{
@@ -57,5 +57,22 @@
 		max-width: 170px;
 		@include font(normal, bold, rem(14px), 1.3, $color-brown-light);
 		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 1389px) {
+	.desc-service-adv{
+		&__text{max-width: 130px;}
+	}
+}
+
+@media (max-width: 1239px) {
+	.desc-service{background-position: calc(50% + 55px) 100%;}
+
+	.desc-service-adv{
+		&__item{width: 50%;}
+		&__icon{width: 66px;}
+		&__text{max-width: calc(100% - 90px);}
+		&__content::before{display: none;}
 	}
 }

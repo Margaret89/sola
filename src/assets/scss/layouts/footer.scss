@@ -38,6 +38,8 @@
 		}
 
 		a:hover{color: $color-brown;}
+
+		.icon{display: none;}
 	}
 }
 
@@ -79,4 +81,21 @@
 	}
 
 	&__link:hover .icon{fill: $color-brown;}
+}
+
+@media (max-width: 1239px) {
+	.footer{
+		&__phone{
+			font-size: 0;
+			.icon{
+				display: inline-block;
+				vertical-align: middle;
+				fill: $color-gold;
+				margin-top: 2px;
+				transition: all 0.3s ease 0s;
+			}
+
+			.icon:hover{fill: $color-brown;}
+		}
+	}
 }

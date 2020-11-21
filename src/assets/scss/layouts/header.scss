@@ -66,6 +66,8 @@
 		margin-right: 15px;
 		transition: all 0.2s ease 0s;
 
+		.icon{display: none;}
+
 		a{
 			color: $color-green;
 			text-decoration: none;
@@ -117,4 +119,44 @@
 	}
 
 	&__link:hover .icon{fill: $color-brown;}
+}
+
+@media (max-width: 1239px) {
+	.header-content{
+		&__phone{
+			font-size: 0;
+			.icon{
+				display: inline-block;
+				vertical-align: middle;
+				fill: $color-green;
+				transition: all 0.3s ease 0s;
+			}
+
+			.icon:hover{fill: $color-brown;}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.header-social{display: none;}
+
+	.header-content{
+		padding-top: 17px;
+		padding-bottom: 20px;
+
+		&__menu{text-align: right;}
+
+		&__contacts{
+			position: absolute;
+		}
+	}
+	
+	.header{
+		.ic-hamburger-wrap{
+			justify-content: flex-end;
+			.ic-hamburger{margin-right: 0;}
+		}
+
+		.ic-hamburger-label{display: none;}
+	}
 }

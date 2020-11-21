@@ -20,3 +20,13 @@
 		margin: 75px -30px -150px;
 	}
 }
+
+@media (max-width: 991px) {
+	.faq-wrap{
+		.unwrap-block,
+		.form-call{
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}

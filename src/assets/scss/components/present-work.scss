@@ -52,8 +52,11 @@
 }
 
 .work-slider{
+	display: none;
 	width: 380px;
 	margin: 0 40px;
+	
+	&.slick-initialized{display: block;}
 
 	&__item{
 		max-width: 190px;
@@ -80,4 +83,8 @@
 	.slick-next{background: url(/assets/img/slider-arr-right.svg) no-repeat center; right: -28px;}
 	.slick-prev:hover{background: url(/assets/img/slider-arr-left-active.svg) no-repeat center;}
 	.slick-next:hover{background: url(/assets/img/slider-arr-right-active.svg) no-repeat center;}
+}
+
+@media (max-width: 991px) {
+	.present-work-wrap{margin-bottom: 50px;}
 }

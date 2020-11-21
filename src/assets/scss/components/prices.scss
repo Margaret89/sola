@@ -204,7 +204,37 @@
 		margin-left: -24px;
 	}
 
-	&__percent{
-		font-size: 64px;
+	&__percent{font-size: rem(64px);}
+}
+
+@media (max-width: 1239px) {
+	.form-sale-wrap{
+		margin-top: 50px;
+		&__img{display: none;}
 	}
+
+	.form-sale{
+		&__bottom{
+			.btn_big,
+			button.btn_big,
+			input[type="submit"].btn_big{
+				max-width: 260px;
+			}
+		}
+
+		&__sale{
+			width: 140px;
+			height: 140px;
+			font-size: rem(72px);
+			left: auto;
+			right: 0;
+			top: -100px;
+		}
+
+		&__percent{font-size: rem(36px);}
+	}
+}
+
+@media (max-width: 991px) {
+	.price-wrap{margin-top: 80px;}
 }

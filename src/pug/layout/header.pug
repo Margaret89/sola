@@ -2,10 +2,10 @@ header.header
 	.header-content-wrap#header-content-wrap
 		.container
 			.row
-				.col-10.offset-1
+				.col-sm-10.offset-sm-1
 					.header-content
 						.row
-							.col-4
+							.col-6.col-sm-4.order-3.order-sm-0
 								.header-content__menu
 									.ic-hamburger-wrap
 										.ic-hamburger.js-open-menu
@@ -13,18 +13,20 @@ header.header
 
 										.ic-hamburger-label Меню
 
-							.col-4
+							.col-6.col-sm-4
 								.header-content__info
 									.header-content__logo
-										img(src="/assets/img/logo.svg", alt="").header-content__logo-big
+										img(src="/assets/img/logo.svg", alt="").header-content__logo-big.d-none.d-sm-inline-block
+										img(src="/assets/img/logo-mob.svg", alt="").header-content__logo-big.d-sm-none
 										img(src="/assets/img/logo-hor.svg", alt="").header-content__logo-small
 
 									.header-content__slogan Клиника эстетической медицины и косметологии
 
-							.col-4
+							.col-4.d-none.d-sm-block
 								.header-content__contacts
 									.header-content__phone
-										a(href="tel:+74958774531") +7 (495) 877-45-31
+										a(href="tel:+74958774531").header-content__link +7 (495) 877-45-31
+											+svg('ic-phone','ic-phone', '25', '25')
 
 									.header-social
 										.header-social__item
@@ -36,6 +38,9 @@ header.header
 
 
 						a(href="#").header-content__feedback Заказать звонок
+
+						a(href="tel:+74958774531").header-content__phone.d-sm-none
+							+svg('ic-phone','ic-phone ic-stroke', '25', '25')
 
 	nav.main-nav.js-main-nav
 		.main-nav__content

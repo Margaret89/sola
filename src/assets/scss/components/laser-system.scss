@@ -51,3 +51,30 @@
 		font-style: italic;
 	}
 }
+
+@media (max-width: 1389px) {
+	.laser-system{
+		&__img{max-width: 365px;}
+		&__info{max-width: calc(100% - 765px);}
+	}
+}
+
+@media (max-width: 1239px) {
+	.laser-system{
+		&__content{flex-wrap: wrap;}
+		&__img{max-width: 500px;}
+
+		&__info{
+			order: 3;
+			width: 100%;
+			max-width: 100%;
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.laser-system{
+		&__img{max-width: calc(100% - 252px);}
+	}
+}

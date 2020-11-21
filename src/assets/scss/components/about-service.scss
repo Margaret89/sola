@@ -59,3 +59,13 @@
 
 	&__desc{padding-right: 30px;}
 }
+
+@media (max-width: 991px) {
+	.about-service{
+		padding-top: 100px;
+		padding-bottom: 0;
+
+		// &__info{width: 60%;}
+		&__title{font-size: rem(32px);}
+	}
+}

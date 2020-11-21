@@ -48,3 +48,16 @@
 		left: 0;
 	}
 }
+
+@media (max-width: 991px) {
+	.result-wrap{padding: 100px 0 45px;}
+	
+	.result-list{
+		&__item{width: calc(50% - 30px);}
+	
+		&__item:nth-child(3n),
+		&__item:nth-child(3n+2){
+			justify-content: flex-start;
+		}
+	}
+}

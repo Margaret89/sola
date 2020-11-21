@@ -36,7 +36,10 @@
 }
 
 .slider-procedure{
+	display: none;
 	padding-bottom: 90px;
+	
+	&.slick-initialized{display: block;}
 
 	&__content{
 		background: #fff;
@@ -124,4 +127,10 @@
 	}
 
 	&__play:hover{transform: scale(1.1) translateY(-50%);}
+}
+
+@media (max-width: 1239px) {
+	.slider-procedure{
+		&__content{margin-left: 12%;}
+	}
 }
