@@ -45,14 +45,15 @@ h6,.h6{
 h1,.h1{
 	font-size: rem(40px);
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 h2,.h2{
 	font-size: rem(35px);
 	font-weight: 300;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	letter-spacing: 0.2px;
 }
 
 h3,.h3{
@@ -225,3 +226,7 @@ button.btn_big{
 .text-justify{text-align: justify !important;}
 .text-uppercase{text-transform: uppercase !important;}
 .text-bold {font-weight: 700 !important;}
+
+.bg-grey{background-color: #e3e6db;}
+.bg-gold{background-color: $color-gold;}
+.bg-brown-light{background-color: $color-brown-light;}

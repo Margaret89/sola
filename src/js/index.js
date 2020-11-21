@@ -75,6 +75,18 @@ function showHeaderScroll(selPos, fixedMenu) {
 // Маска для телефона 
 Inputmask("+7 (999) 999-9999").mask('.js-phone');
 
+// Раскрывающийся блок
+$(".js-unwrap-block").on('click','.js-unwrap-head',function(event){
+	event.preventDefault();
+	$(this).parent().toggleClass("opened");
+	if($(this).parent().hasClass("opened")){
+		$(this).parent().children(".js-unwrap-content").slideDown(400);
+	}
+	else{
+		$(this).parent().children(".js-unwrap-content").slideUp(400);
+	}
+});
+
 
 // $(window).scroll(function(){
 // 	if($(this).scrollTop()>300){

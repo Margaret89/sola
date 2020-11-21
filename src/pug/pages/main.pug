@@ -40,7 +40,7 @@ block content
 							br
 							|на консультацию
 
-	section.desc-service
+	section.desc-service.bg-grey
 		.container
 			.row
 				.col-8.offset-1
@@ -96,7 +96,7 @@ block content
 								br
 								|на консультацию
 
-	section.about-procedures-wrap
+	section.about-procedures-wrap.bg-gold
 		.container
 			.row
 				.col-8.offset-2
@@ -284,7 +284,7 @@ block content
 									.prices-table__old-price 90 000 руб.
 
 
-		.form-sale-wrap
+		.form-sale-wrap.bg-brown-light
 			.container
 				.row
 					.col-12
@@ -293,7 +293,7 @@ block content
 
 						.row
 							.col-5.offset-2
-								.form-sale
+								form.form-sale
 									.form-sale__top
 										.form-sale__title Только до 30 сентября!
 										.form-sale__text При покупке 3-х процедур скидка
@@ -321,7 +321,7 @@ block content
 														| 
 														a(href="#") персональных данныx
 
-										a(href="#").btn.btn_green.btn_big Записаться
+										button.btn.btn_green.btn_big(type="submit") Записаться
 											br
 											|на консультацию
 
@@ -372,3 +372,69 @@ block content
 							.btn.btn_border.btn_green.btn_big Записаться
 								br
 								|на консультацию
+
+	.faq-wrap.bg-grey
+		.container
+			.row
+				.col-12
+					.h2 Часто задаваемые вопросы
+
+			.row
+				.col-4.offset-4
+					-
+						var list=[
+							{title:'Когда ждать результат?', text:'Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор.'},
+							{title:'Сколько нужно процедур?', text:'Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор. Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор.'},
+							{title:'Что из себя представляет косметологическая услуга Fotona 4D?', text:'Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев.'},
+							{title:'Какие у процедуры противопоказания?', text:'Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор.'},
+							{title:'Как проходит реабилитация?', text:'Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор. Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор. Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления и усиления результата рекомендуется пройти курс, длительность которого назначает доктор.'},
+							{title:'4D омоложение — это больно?', text:'Процедура дает моментальный и нарастающий эффекты. Полный эффект достигается через несколько месяцев. Для закрепления.'},
+						]
+
+					each item in list
+						.unwrap-block.js-unwrap-block
+							.unwrap-block__head.js-unwrap-head= item.title
+								.unwrap-block__arr
+									+svg('ic-arrow-down','ic-arrow-down', '22', '12')
+							.unwrap-block__content.js-unwrap-content= item.text
+			
+			.row
+				.col-8.offset-2
+					.form-call
+						.form-call__info
+							.form-call__title Не нашли ответ на свой вопрос?
+							.form-call__text Напишите нам и мы обязательно перезвоним Вам с ответом в самое ближайшее время
+
+						.form-call__content
+							.form-call__fields
+								.form-call__group
+									.form-call__field
+										.form-call__label Ваше имя
+										.form-call__input
+											input(type="text")
+
+									.form-call__field
+										.form-call__label Ваш номер телефона
+										.form-call__input
+											input(type="text", class="js-phone")
+
+								.form-call__field
+									.form-call__label Ваш вопрос
+									.form-call__input
+										textarea
+
+							.form-call__bottom
+								.form-call__polit
+									.input-check
+										input#checkbox2(type='checkbox', checked='checked')
+										label.input-check__label(for='checkbox2')
+											span.input-check__mark
+												+svg('ic-check','ic-check', '21', '16')
+												
+											span.input-check__text Нажимая кнопку, Вы соглашаетесь с обработкой
+												| 
+												a(href="#") персональных данныx
+
+								button.btn(type="submit") Получить ответ
+
+								
