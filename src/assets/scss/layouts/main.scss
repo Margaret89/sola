@@ -230,3 +230,11 @@ button.btn_big{
 .bg-grey{background-color: #e3e6db;}
 .bg-gold{background-color: $color-gold;}
 .bg-brown-light{background-color: $color-brown-light;}
+
+@media (max-width: 767px) {
+	.h2,
+	h2{
+		font-size: rem(27px);
+		line-height: 1.1;
+	}
+}

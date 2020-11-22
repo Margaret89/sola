@@ -129,3 +129,32 @@
 		&__more{font-sizr: rem(18px);}
 	}
 }
+
+@media (max-width: 767px) {
+	.gallery-info{
+		&__item.active{display: block;}
+		&__img{width: calc(100% + 15px);}
+
+		&__content{
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+
+	.gallery-info-thumb{
+		margin-left: -6px;
+		margin-right: -6px;
+
+		&__item,
+		&__more{
+			width: calc(33.33% - 12px);
+			height: 89px;
+			margin: 0 6px 12px;
+		}
+
+		&__more{
+			font-size: rem(10px);
+			line-height: 1.2;
+		}
+	}
+}

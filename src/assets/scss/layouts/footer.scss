@@ -99,3 +99,52 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.footer{
+		text-align: center;
+		padding-top: 27px;
+
+		&__bottom{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		&__copyright{padding-right: 0;}
+
+		&__logo{
+			margin: 22px 0 40px;
+
+			img{
+				width: 125px;
+			}
+		}
+
+		&__contacts{
+			display: flex;
+			flex-direction: column-reverse;
+			padding-left: 0;
+		}
+
+		&__phone{
+			font-size: rem(18px);
+			margin-right: 0;
+			margin-bottom: 47px;
+
+			.icon{display: none;}
+		}
+
+		&__develop{margin-bottom: 46px;}
+	}
+
+	.footer-menu{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__item{margin-bottom: 21px;}
+		&__link{font-size: rem(18px);}
+	}
+
+	.footer-social{margin-bottom: 33px;}
+}

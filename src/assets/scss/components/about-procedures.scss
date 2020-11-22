@@ -134,3 +134,78 @@
 		&__content{margin-left: 12%;}
 	}
 }
+
+@media (max-width: 767px) {
+	.about-procedures-wrap{margin-top: 17px;}
+
+	.about-procedures{
+		background: transparent;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 38px 0 20px;
+
+		&__title{
+			font-size: rem(27px);
+			text-transform: none;
+			line-height: 1.1;
+			margin-bottom: 20px;
+		}
+
+		&__text{
+			font-weight: 600;
+			font-size: rem(16px);
+			line-height: 1.125;
+			color: $color-green;
+		}
+
+		&__info{
+			padding-left: 12px;
+			padding-right: 12px;
+			margin-bottom: 40px;
+		}
+
+		&::after{display: none;}
+	}
+
+	.slider-procedure{
+		background: #fff;
+		padding: 12px;
+
+		&__content{
+			margin: 0;
+			padding: 27px 0 112px;
+		}
+
+		&__title{
+			font-size: rem(30px);
+			padding-bottom: 30px;
+		}
+
+		&__text{
+			font-size: rem(18px);
+			line-height: 1.16;
+
+			p{margin-bottom: 22px;}
+		}
+
+		&__more{margin-top: 20px;}
+
+		.slick-dots{bottom: 35px;}
+	}
+
+	.video-block{
+		height: 182px;
+		max-width: 300px;
+		border: 0;
+
+		&__play{
+			width: 50px;
+			height: 50px;
+			border-width: 4px;
+		}
+
+		&__play::after{
+			border-width: 10px 0 10px 15px;
+		}
+	}
+}

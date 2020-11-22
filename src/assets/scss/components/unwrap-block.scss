@@ -63,3 +63,16 @@
 		margin: 0 auto;
 	}
 }
+
+@media (max-width: 767px) {
+	.unwrap-block{
+		margin-bottom: 26px;
+		
+		&__head{
+			font-size: rem(16px);
+			padding-right: 40px;
+		}
+
+		&__arr{right: 11px;}
+	}
+}

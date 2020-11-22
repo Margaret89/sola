@@ -15,7 +15,8 @@ block content
 				.col-12
 					.about-service__top
 						.about-service__img
-							img(src="/assets/img/woman-lifting.jpg", alt="")
+							img(src="/assets/img/woman-lifting.jpg", alt="").d-none.d-sm-inline-block
+							img(src="/assets/img/woman-lifting-mob.png", alt="").d-sm-none
 
 						.about-service__info
 							.about-service__title Безоперационное лазерное омоложение
@@ -26,7 +27,7 @@ block content
 
 		.container
 			.row
-				.col-10.offset-1
+				.col-sm-10.offset-sm-1
 					.about-service__content
 						.about-service__desc
 							ul.list-design
@@ -45,15 +46,18 @@ block content
 			.row
 				.col-md-8.offset-md-1
 					.desc-service__title Многоуровневое дермальное омоложение <b>Fotona 4D</b> — инновационная методика для впечатляющих результатов
-					.desc-service__text Лазерное омоложение Fotona 4D (Fotona Technology) – это запатентованный безболезненный метод фототермической реконструкции кожи, признанный во всем мире одним из самых комфортных, безопасных и эффективных методов омоложения. Это уникальная для России технология, которая показывает гарантированный результат и при этом не требует подготовки и восстановительного периода. В рамках одной процедуры выполняется комплекс из 4-х запатентованных anti-aging технологий, восстанавливающих поверхностные, средние и глубокие структуры кожи. Реконструкция тканей лица проводится одновременно с внутренней и внешней стороны, поэтому женщинам дается уникальная возможность получить эффект лифтинга и помолодеть быстро, всего за 1 сеанс.
+					.desc-service__text
+						p Лазерное омоложение Fotona 4D (Fotona Technology) – это запатентованный безболезненный метод фототермической реконструкции кожи, признанный во всем мире одним из самых комфортных, безопасных и эффективных методов омоложения. Это уникальная для России технология, которая показывает гарантированный результат и при этом не требует подготовки и восстановительного периода.
+						p В рамках одной процедуры выполняется комплекс из 4-х запатентованных anti-aging технологий, восстанавливающих поверхностные, средние и глубокие структуры кожи. Реконструкция тканей лица проводится одновременно с внутренней и внешней стороны, поэтому женщинам дается уникальная возможность получить эффект лифтинга и помолодеть быстро, всего за 1 сеанс.
 
 		.desc-service__bg.d-sm-none
-			img(src="/assets/img/bg-girl.png", alt="")
+			img(src="/assets/img/bg-girl.png", alt="").d-none.d-md-inline-block
+			img(src="/assets/img/bg-girl-mob.png", alt="").d-sm-none
 
 		.desc-service-adv
 			.container
 				.row
-					.col-10.offset-1
+					.col-sm-10.offset-sm-1
 						.desc-service-adv__content
 							-
 								var list=[
@@ -72,15 +76,18 @@ block content
 	section.laser-system
 		.container
 			.row
-				.col-11
+				.col-sm-11
 					.laser-system__content
-						.laser-system__img
+						.laser-system__img.d-none.d-sm-block
 							img(src="/assets/img/lazer-system.jpg", alt="")
 
 						.laser-system__info
 							.laser-system__main
 								.laser-system__title Высокотехнологичная лазерная система Fotona SP Dynamis 
 								.laser-system__text — это революционное достижение в области лазерных технологий, уникальное оборудование, совмещающее применение эрбиевого и неодимового лазера (Er:YAG и Nd:YAG). Оборудование имеет все необходимые документы, и сертифицировано для применения в России, Штатах, Японии и государствах Европы.
+
+							.laser-system__img.d-sm-none
+								img(src="/assets/img/lazer-system.jpg", alt="")
 
 							.laser-system__desc
 								p В сравнении с аппаратами прошлых поколений, инновационный лазер Fotona SP Dynamis имеет увеличенную волну с уникальной формой. Лазерная волна способна с высокой точностью воздействовать как на поверхностные, так и на глубокие слои кожи и слизистых оболочек, прогревая и активизируя выработку специфических белков – коллагена и эластина, способствуя обновлению клеток и тканей.
@@ -90,16 +97,18 @@ block content
 
 						.laser-system__autor-wrap
 							.laser-system__autor
-								img(src="/assets/img/mary.jpg", alt="")
+								img(src="/assets/img/mary.jpg", alt="").d-none.d-sm-inline-block
+								img(src="/assets/img/mary-mob.jpg", alt="").d-sm-none
 
-							.btn.btn_border.btn_green.btn_big Записаться
-								br
-								|на консультацию
+							.laser-system__btn
+								.btn.btn_border.btn_green.btn_big Записаться
+									br
+									|на консультацию
 
 	section.about-procedures-wrap.bg-gold
 		.container
 			.row
-				.col-8.offset-2
+				.col-sm-8.offset-sm-2
 					.about-procedures
 						.about-procedures__info
 							.about-procedures__title Всего несколько процедур отделяют Вас от молодой и красивой кожи
@@ -161,7 +170,7 @@ block content
 	section.result-wrap
 		.container
 			.row
-				.col-10.offset-1
+				.col-sm-10.offset-sm-1
 					.result-wrap__title Результат заметен уже после первой процедуры!
 
 					.result-list
@@ -186,29 +195,31 @@ block content
 		.container
 			.row
 				.col-md-10.offset-md-1
-					.present-work__content
-						.present-work__img
-							img(src="/assets/img/present-work.png", alt="")
+					.present-work__content-wrap
+						.present-work__content
+							.present-work__img
+								img(src="/assets/img/present-work.png", alt="").d-none.d-sm-inline-block
+								img(src="/assets/img/present-work-mob.jpg", alt="").d-sm-none
 
-						.present-work__info
-							.present-work__title После курса процедур видимый эффект омоложения кожи сохраняется до <b>5 лет!</b>
+							.present-work__info
+								.present-work__title После курса процедур видимый эффект омоложения кожи сохраняется до <b>5 лет!</b>
 
-							.present-work__slider
-								.work-slider.js-work-slider
-									-
-										var list=['work-slide1.jpg', 'work-slide2.jpg', 'work-slide3.jpg', 'work-slide4.jpg', 'work-slide5.jpg', 'work-slide6.jpg']
+								.present-work__slider
+									.work-slider.js-work-slider
+										-
+											var list=['work-slide1.jpg', 'work-slide2.jpg', 'work-slide3.jpg', 'work-slide4.jpg', 'work-slide5.jpg', 'work-slide6.jpg']
 
-									each item in list
-										.work-slider__item
-											img(src="/assets/img/"+item, alt="")
+										each item in list
+											.work-slider__item
+												img(src="/assets/img/"+item, alt="")
 
-							.present-work__more
-								a(href="#") Примеры работ
+								.present-work__more
+									a(href="#") Примеры работ
 
-					.present-work__btn
-						a(href="#").btn.btn_green.btn_big Записаться
-							br
-							|на консультацию
+						.present-work__btn
+							a(href="#").btn.btn_green.btn_big Записаться
+								br
+								|на консультацию
 
 	section.review-wrap
 		.container
@@ -254,8 +265,10 @@ block content
 						.prices-table
 							.prices-table__head
 								.prices-table__title Услуга
-								.prices-table__title Новая<br>цена
-								.prices-table__title Старая<br>цена
+								.prices-table__title.d-none.d-sm-table-cell Новая<br>цена
+								.prices-table__title.d-none.d-sm-table-cell Старая<br>цена
+								.prices-table__title.d-sm-none Цена
+
 
 							.prices-table__row
 								.prices-table__item
@@ -321,9 +334,10 @@ block content
 														| 
 														a(href="#") персональных данныx
 
-										button.btn.btn_green.btn_big(type="submit") Записаться
-											br
-											|на консультацию
+										.form-sale__btn
+											button.btn.btn_green.btn_big(type="submit") Записаться
+												br
+												|на консультацию
 
 									.form-sale__sale
 										span 15
@@ -435,7 +449,8 @@ block content
 												| 
 												a(href="#") персональных данныx
 
-								button.btn(type="submit") Получить ответ
+								.form-call__btn
+									button.btn(type="submit") Получить ответ
 
 	section.license-wrap
 		.container
@@ -532,7 +547,7 @@ block content
 	section.contacts-wrap.bg-grey
 		.container
 			.row
-				.col-10.offset-1
+				.col-sm-10.offset-sm-1
 					.h2 Контакты
 
 					.contacts

@@ -47,7 +47,10 @@
 	padding: 80px 0 40px;
 	transition: 0.2s ease-out;
 
-	&__logo-small{display: none;}
+	&__logo-small,
+	&__logo-mob{
+		display: none;
+	}
 	
 	&__info{
 		max-width: 200px;
@@ -98,6 +101,8 @@
 		bottom: 40px;
 		right: 0;
 		transition: all 0.2s ease 0s;
+
+		.icon{display: none;}
 	}
 
 	&__feedback:hover{
@@ -149,6 +154,58 @@
 		&__contacts{
 			position: absolute;
 		}
+
+		&__logo-big{display: none;}
+		&__logo-mob{display: block;}
+
+		&__phone{
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			background: #fff;
+			position: absolute;
+			right: 0;
+			bottom: 80px;
+			margin: 0;
+
+			.icon{
+				fill: transparent;
+				stroke: $color-green;
+			}
+		}
+
+		&__phone:hover .icon{fill: $color-green;}
+
+		&__feedback{
+			width: 56px;
+			height: 56px;
+			font-size: 0;
+			background: $color-green;
+			bottom: 14px;
+
+			.icon{
+				display: inline-block;
+				vertical-align: top;
+				fill: #fff;
+				transition: all 0.3s ease 0s;
+			}
+		}
+
+		&__feedback:hover{
+			background: #fff;
+			.icon{fill: $color-green;}
+		}
+
+		&__slogan{
+			font-size: rem(20px);
+			line-height: 1.15;
+			letter-spacing: 0.3px;
+			margin-top: 112px;
+			margin-left: 0;
+		}
 	}
 	
 	.header{
@@ -158,5 +215,21 @@
 		}
 
 		.ic-hamburger-label{display: none;}
+	}
+
+	.header-content-wrap{
+		&.fixed{
+			.header-content{
+				padding: 16px 0;
+
+				&__logo-big,
+				&__logo-mob{
+					display: none;
+				}
+
+				&__logo{text-align: left;}
+				&__logo-small{width: 110px;}
+			}
+		}
 	}
 }

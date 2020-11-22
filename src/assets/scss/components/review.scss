@@ -108,3 +108,47 @@
 		margin-bottom: 80px;
 	}
 }
+
+@media (max-width: 991px) {
+	.review-wrap{
+		background: rgba(227, 230, 219, 0.18);
+		padding: 30px 0;
+		margin-top: 56px;
+	}
+
+	.review{
+		&__title{
+			font-size: rem(27px);
+			line-height: 1.1;
+		}
+
+		&__list{padding: 36px 15px;}
+		&__img{margin-bottom: 26px;}
+		&__top{margin-top: 0;}
+		&__text{line-height: 1.26;}
+
+		&__item{
+			flex-wrap: wrap;
+			position: relative;
+		}
+
+		&__top .rating{
+			position: absolute;
+			right: 0;
+			top: 16px;
+		}
+
+		&__content{width: 100%;}
+		&__date{margin-right: 5px;}
+
+		&__item:not(:last-child){
+			padding-bottom: 20px;
+			margin-bottom: 30px;
+		}
+
+		&__more{
+			margin-top: 18px;
+			font-size: rem(16px);
+		}
+	}
+}

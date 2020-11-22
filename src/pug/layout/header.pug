@@ -16,8 +16,8 @@ header.header
 							.col-6.col-sm-4
 								.header-content__info
 									.header-content__logo
-										img(src="/assets/img/logo.svg", alt="").header-content__logo-big.d-none.d-sm-inline-block
-										img(src="/assets/img/logo-mob.svg", alt="").header-content__logo-big.d-sm-none
+										img(src="/assets/img/logo.svg", alt="").header-content__logo-big
+										img(src="/assets/img/logo-mob.svg", alt="").header-content__logo-mob
 										img(src="/assets/img/logo-hor.svg", alt="").header-content__logo-small
 
 									.header-content__slogan Клиника эстетической медицины и косметологии
@@ -38,18 +38,21 @@ header.header
 
 
 						a(href="#").header-content__feedback Заказать звонок
+							+svg('ic-mail-stroke','ic-mail-stroke', '34', '26')
 
 						a(href="tel:+74958774531").header-content__phone.d-sm-none
-							+svg('ic-phone','ic-phone ic-stroke', '25', '25')
+							+svg('ic-phone-stroke','ic-phone-stroke ic-stroke', '30', '30')
 
 	nav.main-nav.js-main-nav
 		.main-nav__content
 			.container
 				.row
-					.col-10.offset-1
+					.col-sm-10.offset-sm-1
 						.main-nav__info
 							.main-nav__logo
 								img(src="/assets/img/logo.svg", alt="")
+
+							.main-nav__title Меню
 
 							.main-nav__close
 								.ic-hamburger.active.js-close-menu
@@ -61,5 +64,13 @@ header.header
 								each item in list
 									li.main-menu__item
 										a(href="#").main-menu__link= item
+
+							.header-social
+								.header-social__item
+									a(href="#").header-social__link
+										+svg('ic-intagram','ic-intagram', '22', '22')
+								.header-social__item
+									a(href="#").header-social__link
+										+svg('ic-facebook','ic-facebook', '22', '22')
 
 #position-fixedmenu

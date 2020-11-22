@@ -78,3 +78,48 @@
 		&__img{max-width: calc(100% - 252px);}
 	}
 }
+
+@media (max-width: 767px) {
+	.laser-system{
+		padding: 37px 0;
+
+		&__content{
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		&__img,
+		&__info,
+		&__autor-wrap{
+			width: 100%;
+			max-width: 100%;
+		}
+
+		&__info &__img{
+			margin: 45px 0 36px -15px;
+			width: calc(100% + 15px);
+			max-width: calc(100% + 15px);
+		}
+
+		&__info{margin: 0 0 30px;}
+		&__title{margin-bottom: 32px;}
+		
+		&__text{
+			font-size: rem(18px);
+			line-height: 1.16;
+			padding-left: 26px;
+		}
+
+		&__desc{
+			font-size: rem(18px);
+			line-height: 1.16;
+		}
+
+		&__autor-wrap{text-align: center;}
+
+		&__btn{
+			display: table;
+			margin: 0 auto;
+		}
+	}
+}

@@ -61,3 +61,21 @@
 		}
 	}
 }
+
+@media (max-width: 767px) {
+	.result-wrap{
+		padding-top: 45px;
+		background-position: 0 -193px;
+
+		&__title{
+			font-size: rem(27px);
+			line-height: 1.1;
+			text-align: left;
+			margin-bottom: 48px;
+		}
+	}
+
+	.result-list{
+		&__item{width: calc(100% - 30px);}
+	}
+}

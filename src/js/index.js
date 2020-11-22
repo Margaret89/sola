@@ -83,6 +83,13 @@ function showHeaderScroll(selPos, fixedMenu) {
 					centerPadding: '250px',
 				}
 			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '0',
+				}
+			},
 		]
 	});
 

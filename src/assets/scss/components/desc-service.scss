@@ -1,6 +1,8 @@
 /*-------------- desc-service -----------------*/
 .desc-service{
-	background: url(/assets/img/bg-girl.png) no-repeat calc(50% + 265px) 100%;
+	background-image: url(/assets/img/bg-girl.png);
+	background-repeat: no-repeat;
+	background-position: calc(50% + 265px) 100%;
 	padding: 95px 0 50px;
 
 	&__title{
@@ -74,5 +76,49 @@
 		&__icon{width: 66px;}
 		&__text{max-width: calc(100% - 90px);}
 		&__content::before{display: none;}
+	}
+}
+
+@media (max-width: 767px) {
+	.desc-service{
+		padding-top: 63px;
+		padding-bottom: 20px;
+		background-image: none;
+
+		&__title{
+			font-size: rem(30px);
+			line-height: 1.06;
+			margin-bottom: 53px;
+		}
+
+		&__text{column-count: 1;}
+		&__bg{text-align: center;}
+
+		.desc-service-adv{margin-top: -40px;}
+	}
+
+	.desc-service-adv{
+		&__item{
+			width: 100%;
+			position: relative;
+		}
+
+		&__item:not(:last-child){
+			padding-bottom: 26px;
+			margin-bottom: 12px;
+		}
+
+		&__item:not(:last-child)::after{
+			content: '';
+			display: inline-block;
+			width: calc(100% - 90px);
+			height: 1px;
+			background: $color-brown;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		&__content{padding: 37px 10px;}
 	}
 }

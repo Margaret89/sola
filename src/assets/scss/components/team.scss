@@ -115,3 +115,38 @@
 
 	.slick-current .team-slider__content{margin-left: 40px;}
 }
+
+@media (max-width: 767px) {
+	.team-wrap{
+		margin-top: 100px;
+		margin-bottom: 45px;
+	}
+
+	.team{
+		&__title{
+			font-size: rem(27px);
+			line-height: 1.1;
+			text-transform: none;
+			margin-bottom: 38px;
+		}
+	}
+
+	.team-slider{
+		padding-bottom: 132px;
+
+		&__content{
+			width: calc(100% - 15px);
+			padding: 14px 15px 14px 34px;
+		}
+
+		&__name{
+			font-size: rem(27px);
+			padding-bottom: 15px;
+			margin-bottom: 26px;
+		}
+
+		.slick-dots{max-width: calc(100% - 60px);}
+	}
+
+	.slick-current .team-slider__content{margin-left: 15px;}
+}

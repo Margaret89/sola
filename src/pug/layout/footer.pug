@@ -1,7 +1,7 @@
 footer.footer
 	.container
 		.row
-			.col-10.offset-1
+			.col-sm-10.offset-sm-1
 				-
 					var list=['Уникальная технология', 'Этапы процедуры', 'Примеры работ', 'Отзывы', 'Стоимость', 'Врачи', 'FAQ', ' О компании', 'Контакты']
 				ul.footer-menu
@@ -10,13 +10,17 @@ footer.footer
 							a(href="#").footer-menu__link= item
 
 				.footer__logo
-					img(src="/assets/img/logo-gold.svg", alt="")
+					img(src="/assets/img/logo-gold.svg", alt="").d-none.d-sm-inline-block
+					img(src="/assets/img/logo-mob-gold.svg", alt="").d-sm-none
 
-				.footer__develop Разработка сайта 
+				.footer__develop.d-none.d-sm-block Разработка сайта 
 					b Plan The Best
 
 				.footer__bottom
 					.footer__copyright ©2020 SOLA | Клиника эстетической медицины и косметологии.
+
+					.footer__develop.d-sm-none Разработка сайта 
+						b Plan The Best
 
 					.footer__contacts
 						.footer__phone
