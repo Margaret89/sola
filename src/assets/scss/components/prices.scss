@@ -180,10 +180,16 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-top: 10px;
+
+		.btn_big,
+		button.btn_big,
+		input[type="submit"].btn_big{
+			max-width: 100%;
+		}
 	}
 
 	&__polit,
-	&__bottom .btn{
+	&__btn{
 		width: calc(50% - 44px);
 	}
 
@@ -214,14 +220,6 @@
 	}
 
 	.form-sale{
-		&__bottom{
-			.btn_big,
-			button.btn_big,
-			input[type="submit"].btn_big{
-				max-width: 260px;
-			}
-		}
-
 		&__sale{
 			width: 140px;
 			height: 140px;
@@ -232,6 +230,16 @@
 		}
 
 		&__percent{font-size: rem(36px);}
+	}
+}
+
+@media (max-width: 1389px) {
+	.form-sale{
+		&__field,
+		&__btn,
+		&__polit{
+			width: calc(50% - 25px);
+		}
 	}
 }
 
@@ -331,6 +339,14 @@
 			width: 100%;
 			text-align: center;
 			margin-bottom: -60px;
+		}
+
+		&__bottom{
+			.btn_big,
+			button.btn_big,
+			input[type="submit"].btn_big{
+				max-width: 235px;
+			}
 		}
 	}
 }

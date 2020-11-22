@@ -1,7 +1,7 @@
 .header{
 	height: 100vh;
 	min-height: 100vh;
-	background: url(#{$path-img}/bg-woman.jpg) no-repeat center;
+	background: url(#{$path-img}/bg-woman.jpg) no-repeat calc(50% - 320px) 50%;
 	background-size: cover;
 }
 
@@ -232,4 +232,20 @@
 			}
 		}
 	}
+}
+
+@media (max-height: 800px) {
+	.header{background-position: calc(50% - 18vh) 50%;}
+}
+
+@media (max-height: 700px) {
+	.header{background-position: calc(50% - 18vh) 50%;}
+}
+
+@media (max-height: 580px) {
+	.header{background-position: 50%;}
+}
+
+@media (max-width: 991px) {
+	.header{background-position:  50%;}
 }

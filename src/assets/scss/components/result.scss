@@ -21,22 +21,18 @@
 		display: flex;
 		width: calc(33.33% - 30px);
 		margin: 0 15px 40px;
+		position: relative;
 	}
 
 	&__item:nth-child(3n){justify-content: flex-end;}
 	&__item:nth-child(3n+2){justify-content: center;}
 
-	&__content{max-width: 235px;}
-	&__img{margin-bottom: 14px;}
-
-	&__text{
-		@include font(normal, 600, rem(18px), 1, $color-brown-light);
-		letter-spacing: 0.2px;
-		padding-bottom: 15px;
+	&__content{
+		max-width: 235px;
 		position: relative;
 	}
 
-	&__text::after{
+	&__content::after{
 		content: '';
 		display: inline-block;
 		vertical-align: top;
@@ -46,6 +42,14 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
+	}
+
+	&__img{margin-bottom: 14px;}
+
+	&__text{
+		@include font(normal, 600, rem(18px), 1, $color-brown-light);
+		letter-spacing: 0.2px;
+		padding-bottom: 15px;
 	}
 }
 
