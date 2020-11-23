@@ -53,6 +53,10 @@ function showHeaderScroll(selPos, fixedMenu) {
 	}
 }
 
+// Высота шапки для мобильных браузеров
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 // Слайдер процедур
 	$('.js-slider-procedure').slick({
 		arrows: false,
@@ -130,7 +134,6 @@ if($('.js-gallery-info').length){
 	});
 }
 
-// Yandex карта
 // Yandex карта
 if ($('.js-map').length) {
 	// Иницилизация карты

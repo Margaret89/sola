@@ -1,3 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127" height="127" viewBox="0 0 127 127">
-  <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="127" height="127" xlink:href="data:img/png;base64,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"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 127 127" style="enable-background:new 0 0 127 127;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EAD9BF;}
+	.st1{clip-path:url(#SVGID_2_);fill:#EAD9BF;}
+</style>
+<path class="st0" d="M9,9h108.9v108.9H9V9z M0,127h127V0H0V127z"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="127" height="127"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st1" d="M23.8,73.3c0-2.9,2.2-5.2,6-5.2c2.3,0,4.3,0.8,5.5,2.1L33.9,72c-1-1-2.3-1.6-4-1.6c-2.2,0-3.6,1.2-3.6,2.9
+		c0,4.9,9.7,3.1,9.7,9.8c0,3.3-2.9,5.4-6.4,5.4c-2.4,0-5.3-1.1-6.2-3l1.4-1.6c1.2,1.5,3.2,2.3,4.9,2.3c2.1,0,3.9-1.1,3.9-3.1
+		C33.5,78.3,23.8,79.9,23.8,73.3"/>
+	<path class="st1" d="M51.2,86.2c4.5,0,7.5-3.5,7.5-7.9c0-4.6-3.3-7.9-7.5-7.9c-4.3,0-7.6,3.3-7.6,7.9C43.6,82.8,47,86.2,51.2,86.2
+		 M51.2,68.1c5.7,0,10.1,4.2,10.1,10.2c0,5.9-4.4,10.2-10.1,10.2c-5.7,0-10.1-4.2-10.1-10.2C41.1,72.6,45.3,68.1,51.2,68.1"/>
+	<polygon class="st1" points="68,68.4 70.4,68.4 70.4,86 80.1,86 80.1,88.2 68,88.2 	"/>
+	<path class="st1" d="M90.5,80h7.1L94,71.5L90.5,80z M93.1,68.3h2.1l8.5,19.9h-2.6l-2.5-6h-9l-2.5,6h-2.4L93.1,68.3z"/>
+	<path class="st1" d="M51.5,28.8v0.2c6.7,4.6,10.8,11.3,11.8,19.6h0.5c1-8.3,5.1-15,11.8-19.6v-0.2H51.5z"/>
+	<path class="st1" d="M43.5,98.1H43l-0.8-2.1c0-0.1-0.1-0.3-0.1-0.4c0,0.1-0.1,0.3-0.1,0.4l-0.8,2h-0.5l-1.1-3.2h0.6l0.6,2
+		c0,0.2,0.1,0.3,0.1,0.4c0-0.1,0.1-0.3,0.1-0.4l0.7-2h0.5l0.7,2c0.1,0.1,0.1,0.3,0.1,0.5c0-0.2,0.1-0.3,0.1-0.5l0.6-2h0.6L43.5,98.1
+		z"/>
+	<path class="st1" d="M45.5,96.2h1.9c0-0.5-0.4-0.8-0.9-0.8C46,95.4,45.6,95.8,45.5,96.2 M47.8,97.8c-0.3,0.3-0.8,0.4-1.2,0.4
+		c-1,0-1.7-0.7-1.7-1.7c0-0.9,0.6-1.7,1.6-1.7c0.8,0,1.5,0.6,1.5,1.5c0,0.2,0,0.3,0,0.4h-2.4c0,0.6,0.5,1,1.1,1c0.4,0,0.8-0.1,1-0.3
+		L47.8,97.8z"/>
+	<path class="st1" d="M48.9,93.2h0.6V97c0,0.4,0.1,0.6,0.4,0.6c0.2,0,0.3-0.1,0.4-0.1l0.1,0.4c-0.2,0.1-0.4,0.2-0.7,0.2
+		c-0.5,0-0.7-0.3-0.7-0.9V93.2z"/>
+	<path class="st1" d="M51,93.2h0.6V97c0,0.4,0.1,0.6,0.4,0.6c0.2,0,0.3-0.1,0.4-0.1l0.1,0.4c-0.2,0.1-0.4,0.2-0.7,0.2
+		c-0.5,0-0.7-0.3-0.7-0.9V93.2z"/>
+	<path class="st1" d="M53.6,95.8v1.6c0.3,0.2,0.5,0.2,0.8,0.2c0.6,0,1.1-0.4,1.1-1.1c0-0.7-0.4-1.1-1-1.1
+		C54.1,95.4,53.8,95.6,53.6,95.8 M53.1,93.2h0.6v2.1c0.2-0.2,0.6-0.4,1-0.4c0.9,0,1.5,0.7,1.5,1.6c0,1-0.7,1.7-1.8,1.7
+		c-0.5,0-1-0.1-1.3-0.4V93.2z"/>
+	<path class="st1" d="M57.4,96.2h1.9c0-0.5-0.4-0.8-0.9-0.8C57.8,95.4,57.5,95.8,57.4,96.2 M59.7,97.8c-0.3,0.3-0.8,0.4-1.2,0.4
+		c-1,0-1.7-0.7-1.7-1.7c0-0.9,0.6-1.7,1.6-1.7c0.8,0,1.5,0.6,1.5,1.5c0,0.2,0,0.3,0,0.4h-2.4c0,0.6,0.5,1,1.1,1c0.4,0,0.8-0.1,1-0.3
+		L59.7,97.8z"/>
+	<path class="st1" d="M60.8,94.9h0.6v3.2h-0.6V94.9z M61.1,93.4c0.2,0,0.3,0.1,0.3,0.3c0,0.2-0.2,0.4-0.3,0.4
+		c-0.2,0-0.4-0.1-0.4-0.4C60.8,93.5,60.9,93.4,61.1,93.4"/>
+	<path class="st1" d="M62.5,94.9h0.6v0.4c0.2-0.2,0.6-0.4,1-0.4c0.8,0,1.3,0.4,1.3,1.4v1.8h-0.6v-1.7c0-0.7-0.3-1-0.9-1
+		c-0.4,0-0.7,0.2-0.9,0.4v2.3h-0.6V94.9z"/>
+	<path class="st1" d="M67.6,96.7c0.4,0,0.8-0.3,0.8-0.7c0-0.4-0.3-0.7-0.8-0.7c-0.5,0-0.8,0.3-0.8,0.7
+		C66.9,96.4,67.2,96.7,67.6,96.7 M67.6,99.1c0.7,0,1.1-0.2,1.1-0.6c0-0.4-0.4-0.6-1.1-0.6c-0.7,0-1.1,0.2-1.1,0.6
+		C66.5,98.9,67,99.1,67.6,99.1 M67,97.6C67,97.5,67,97.4,67,97.3c0-0.1,0-0.2,0.1-0.3c-0.5-0.2-0.7-0.6-0.7-1c0-0.6,0.5-1.2,1.3-1.2
+		c0.3,0,0.6,0.1,0.8,0.2l0.9-0.2l0,0.5l-0.6,0.1c0.1,0.2,0.2,0.4,0.2,0.6c0,0.6-0.5,1.1-1.3,1.1c-0.1,0-0.1,0-0.2,0
+		c0,0.1,0,0.1,0,0.2c0,0.1,0,0.2,0.1,0.2c0.1,0,0.1,0,0.2,0c0.9,0,1.6,0.3,1.6,1c0,0.7-0.7,1-1.6,1c-0.9,0-1.6-0.3-1.6-1
+		C66,98.1,66.4,97.7,67,97.6"/>
+	<path class="st1" d="M74.3,97.7C74,98,73.5,98.2,73,98.2c-1,0-1.7-0.7-1.7-1.7c0-0.9,0.7-1.7,1.6-1.7c0.5,0,1,0.1,1.3,0.4l-0.3,0.4
+		c-0.3-0.2-0.6-0.3-0.9-0.3c-0.6,0-1.1,0.5-1.1,1.1c0,0.7,0.5,1.1,1.1,1.1c0.4,0,0.7-0.2,0.9-0.4L74.3,97.7z"/>
+	<path class="st1" d="M75,93.2h0.6V97c0,0.4,0.1,0.6,0.4,0.6c0.2,0,0.3-0.1,0.4-0.1l0.1,0.4c-0.2,0.1-0.4,0.2-0.7,0.2
+		c-0.5,0-0.7-0.3-0.7-0.9V93.2z"/>
+	<path class="st1" d="M77.2,94.9h0.6v3.2h-0.6V94.9z M77.5,93.4c0.2,0,0.3,0.1,0.3,0.3c0,0.2-0.2,0.4-0.3,0.4
+		c-0.2,0-0.4-0.1-0.4-0.4C77.1,93.5,77.3,93.4,77.5,93.4"/>
+	<path class="st1" d="M78.9,94.9h0.6v0.4c0.2-0.2,0.6-0.4,1-0.4c0.8,0,1.3,0.4,1.3,1.4v1.8h-0.6v-1.7c0-0.7-0.3-1-0.9-1
+		c-0.4,0-0.7,0.2-0.9,0.4v2.3h-0.6V94.9z"/>
+	<path class="st1" d="M82.8,94.9h0.6v3.2h-0.6V94.9z M83.1,93.4c0.2,0,0.3,0.1,0.3,0.3c0,0.2-0.2,0.4-0.3,0.4
+		c-0.2,0-0.4-0.1-0.4-0.4C82.8,93.5,82.9,93.4,83.1,93.4"/>
+	<path class="st1" d="M87.2,97.7C87,98,86.5,98.2,86,98.2c-1,0-1.7-0.7-1.7-1.7c0-0.9,0.7-1.7,1.6-1.7c0.5,0,1,0.1,1.3,0.4l-0.3,0.4
+		c-0.3-0.2-0.6-0.3-0.9-0.3c-0.6,0-1.1,0.5-1.1,1.1c0,0.7,0.5,1.1,1.1,1.1c0.4,0,0.7-0.2,0.9-0.4L87.2,97.7z"/>
+</g>
 </svg>

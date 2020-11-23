@@ -1,6 +1,8 @@
 .header{
 	height: 100vh;
-	min-height: 100vh;
+	// min-height: 100vh;
+	// height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+	height: calc(var(--vh, 1vh) * 100);
 	background: url(#{$path-img}/bg-woman.jpg) no-repeat calc(50% - 320px) 50%;
 	background-size: cover;
 }
@@ -156,7 +158,10 @@
 		}
 
 		&__logo-big{display: none;}
-		&__logo-mob{display: block;}
+		&__logo-mob{
+			display: block;
+			width: 125px;
+		}
 
 		&__phone{
 			display: inline-flex;
@@ -168,7 +173,7 @@
 			background: #fff;
 			position: absolute;
 			right: 0;
-			bottom: 80px;
+			bottom: 140px;
 			margin: 0;
 
 			.icon{
@@ -184,7 +189,7 @@
 			height: 56px;
 			font-size: 0;
 			background: $color-green;
-			bottom: 14px;
+			bottom: 74px;
 
 			.icon{
 				display: inline-block;
