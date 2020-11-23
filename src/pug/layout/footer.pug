@@ -34,3 +34,32 @@ footer.footer
 							.footer-social__item
 								a(href="#").footer-social__link
 									+svg('ic-facebook','ic-facebook', '20', '20')
+
+<!--Форма обратной связи-->
+#form-callback(style='display: none;')
+	.popup-callback
+		form.form-site
+			.form-site__title Поможем записаться на прием к нужному специалисту
+
+			.form-site__content
+				.form-site__field
+					.form-site__input
+						input(type="text", placeholder="Имя")
+
+				.form-site__field
+					.form-site__input
+						input(type="text", placeholder="Ваш номер", class="js-phone")
+			
+			.form-site__btn
+				button.btn.btn_green(type="submit") Записаться к врачу
+
+			.form-site__polit
+				.input-check
+					input#checkbox10(type='checkbox', checked='checked')
+					label.input-check__label(for='checkbox10')
+						span.input-check__mark
+							//- +svg('ic-check','ic-check', '21', '16')
+							
+						span.input-check__text Нажимая кнопку, Вы соглашаетесь с обработкой
+							| 
+							a(href="#") персональных данныx

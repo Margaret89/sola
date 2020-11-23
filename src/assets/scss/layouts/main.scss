@@ -134,7 +134,7 @@ button.btn{
 }
 
 .btn:hover::before{
-	transform: skewX(-45deg) translateX(14em);
+	transform: skewX(-45deg) translateX(18em);
 	transition: all 0.5s ease-in-out;
 }
 

@@ -1,0 +1,29 @@
+/*-------------- popup -----------------*/
+.popup{padding: 40px;}
+
+.popup-callback{
+	width: 897px;
+	max-width: 100%;
+	background: url(/assets/img/bg-form.jpg) no-repeat center;
+	padding: 52px 40px;
+
+	.form-site{
+		width: 345px;
+		max-width: 100%;
+		margin: 0 auto;
+
+		&__content,
+		&__btn,
+		&__polit{
+			width: 230px;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.popup{padding: 40px 15px;}
+	.popup-callback{padding: 52px 15px;}
+}

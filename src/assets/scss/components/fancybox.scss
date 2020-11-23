@@ -1,0 +1,11 @@
+/*-------------- fancybox -----------------*/
+.fancybox-slide--html .fancybox-close-small{
+	padding: 0;
+	right: 5px;
+	top: 5px;
+}
+
+.fancybox-content{padding: 0;}
+.fancybox-button svg path{fill: $color-green;}
+.fancybox-close-small{opacity: 1;}
+.fancybox-close-small:hover{opacity: 0.8;}
