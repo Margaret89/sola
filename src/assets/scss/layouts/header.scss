@@ -1,10 +1,9 @@
 .header{
 	height: 100vh;
-	// min-height: 100vh;
-	// height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-	height: calc(var(--vh, 1vh) * 100);
+	min-height: 100vh;
 	background: url(#{$path-img}/bg-woman.jpg) no-repeat calc(50% - 320px) 50%;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .header-content-wrap{
@@ -84,7 +83,7 @@
 
 	&__contacts{
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: flex-end;
 	}
 
@@ -214,6 +213,10 @@
 	}
 	
 	.header{
+		min-height: 0;
+		height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 100);
+
 		.ic-hamburger-wrap{
 			justify-content: flex-end;
 			.ic-hamburger{margin-right: 0;}

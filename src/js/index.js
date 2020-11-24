@@ -158,6 +158,19 @@ if ($('.js-map').length) {
 	}
 }
 
+// Добавление анимации при скролле до элемента
+$(window).on('scroll',function() {
+	$('.js-anim').each(function () {
+		var elemPos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		var indentTop = $(window).innerHeight()/2 + $(this).innerHeight()/2;
+		
+		if ((elemPos < topOfWindow+ indentTop) && (!$(this).hasClass('animated'))) {
+			$(this).addClass("animated");
+		}
+	});
+});
+
 
 
 

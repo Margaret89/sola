@@ -147,6 +147,12 @@ body.open-menu{
 	}
 }
 
+@media (max-height: 750px) {
+	.main-nav{
+		&__logo{margin-bottom: 35px;}
+	}
+}
+
 @media (max-width: 767px) {
 	.main-nav{
 		text-align: left;
