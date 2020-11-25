@@ -34,11 +34,19 @@
 	}
 
 	&__more{
+		width: 460px;
 		@include font(normal, bold, rem(18px), 1.2, $color-brown-light);
-		text-align: right;
-		margin-top: 20px;
-		padding-right: 17px;
+		text-align: center;
+		margin: 20px 0 0 auto;
+		transition: all 0.2s ease 0s;
+
+		a{
+			text-decoration: none;
+			transition: all 0.2s ease 0s;
+		}
 	}
+
+	&__more a:hover{color: $color-brown;}
 
 	&__btn{
 		text-align: right;
@@ -54,7 +62,7 @@
 .work-slider{
 	display: none;
 	width: 380px;
-	margin: 0 40px;
+	margin: 0 40px 40px;
 	
 	&.slick-initialized{display: block;}
 
@@ -83,6 +91,14 @@
 	.slick-next{background: url(/assets/img/slider-arr-right.svg) no-repeat center; right: -28px;}
 	.slick-prev:hover{background: url(/assets/img/slider-arr-left-active.svg) no-repeat center;}
 	.slick-next:hover{background: url(/assets/img/slider-arr-right-active.svg) no-repeat center;}
+
+	.slick-dots{bottom: -45px;}
+
+	.slick-dots button{
+		width: 20px;
+		height: 20px;
+		margin: 10px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -130,7 +146,10 @@
 			margin-right: -5px;
 		}
 
-		&__more{margin: 40px auto 0;}
+		&__more{
+			max-width: 100%;
+			margin: 30px auto;
+		}
 
 		&__btn{
 			text-align: center;
@@ -147,12 +166,12 @@
 
 		.slick-arrow{
 			top: auto;
-			bottom: -62px;
+			bottom: -52px;
 			transform: none;
 		}
 
 		.slick-next{right: 0;}
 		.slick-prev{left: 0;}
-
+		.slick-dots{bottom: -110px;}
 	}
 }

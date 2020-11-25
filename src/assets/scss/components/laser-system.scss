@@ -1,6 +1,7 @@
 /*-------------- laser-system -----------------*/
 .laser-system{
 	padding: 84px 0;
+	overflow: hidden;
 
 	&__content{
 		display: flex;
@@ -14,10 +15,16 @@
 		width: 232px;
 	}
 
-	&__autor{margin-bottom: 20px;}
+	&__autor{
+		margin-bottom: 20px;
+		transform: translateX(300%);
+		transition: transform 0.7s ease 0s;
+	}
 
 	&__img{
 		max-width: 465px;
+		transform: translateX(-200%);
+		transition: transform 0.9s ease 0s;
 	}
 
 	&__info{
@@ -49,6 +56,11 @@
 	&__accent{
 		font-weight: 600;
 		font-style: italic;
+	}
+
+	&__content.animated &__img,
+	&__content.animated &__autor{
+		transform: translateX(0);
 	}
 }
 

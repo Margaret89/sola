@@ -41,7 +41,7 @@ block content
 							br
 							|на консультацию
 
-	section.desc-service.bg-grey.js-anim
+	section.desc-service.bg-grey
 		.container
 			.row
 				.col-md-10.col-xl-8.offset-xl-1
@@ -77,7 +77,7 @@ block content
 		.container
 			.row
 				.col-xl-11
-					.laser-system__content
+					.laser-system__content.js-anim
 						.laser-system__img.d-none.d-sm-block
 							img(src="/assets/img/lazer-system.jpg", alt="")
 
@@ -539,11 +539,15 @@ block content
 								]
 
 							each item, index in list
-								.gallery-info-thumb__item.js-gallery-info-thumb-item(style="background-image: url(/assets/img/"+item.img+")", data-img=index)
+								.gallery-info-thumb__item.js-gallery-info-thumb-item(data-img=index)
+									.gallery-info-thumb__img-wrap
+										.gallery-info-thumb__img(style="background-image: url(/assets/img/"+item.img+")")
 
-							.gallery-info-thumb__more Больше
-								br
-								|фото
+							.gallery-info-thumb__more
+								.gallery-info-thumb__more-content
+									.gallery-info-thumb__more-text Больше
+										br
+										|фото
 
 	section.contacts-wrap.bg-grey
 		.container

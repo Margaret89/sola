@@ -13,7 +13,7 @@
 		position: relative;
 		text-align: right;
 		transform: translateX(-200%);
-		transition: transform 0.7s ease 0s;
+		transition: transform 0.9s ease 0s;
 
 		img{
 			border-radius: 0 184px 184px 0;
@@ -39,7 +39,7 @@
 		position: relative;
 		z-index: 2;
 		transform: translateX(200%);
-		transition: transform 0.5s ease 0s;
+		transition: transform 0.7s ease 0s;
 	}
 
 	&__title{
