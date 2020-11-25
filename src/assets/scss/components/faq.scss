@@ -21,12 +21,30 @@
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1389px) {
 	.faq-wrap{
 		.unwrap-block,
 		.form-call{
 			margin-left: 0;
 			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.form-call{
+		&__content{width: 55%;}
+
+		&__bottom{
+			flex-wrap: wrap;
+			margin-top: 30px;
+		}
+
+		&__polit{
+			width: 100%;
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 28px;
 		}
 	}
 }
@@ -67,18 +85,6 @@
 		}
 
 		&__group &__field{width: calc(100% - 14px);}
-
-		&__bottom{
-			flex-wrap: wrap;
-			margin-top: 30px;
-		}
-
-		&__polit{
-			width: 100%;
-			max-width: 100%;
-			margin-right: 0;
-			margin-bottom: 28px;
-		}
 
 		textarea{height: 118px;}
 

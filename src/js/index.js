@@ -54,8 +54,8 @@ function showHeaderScroll(selPos, fixedMenu) {
 }
 
 // Высота шапки для мобильных браузеров
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // Слайдер процедур
 	$('.js-slider-procedure').slick({

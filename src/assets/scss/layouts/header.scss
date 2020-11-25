@@ -127,7 +127,7 @@
 	&__link:hover .icon{fill: $color-brown;}
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 1189px) {
 	.header-content{
 		&__phone{
 			font-size: 0;
@@ -213,9 +213,9 @@
 	}
 	
 	.header{
-		min-height: 0;
-		height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-		height: calc(var(--vh, 1vh) * 100);
+		// min-height: 0;
+		// height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+		// height: calc(var(--vh, 1vh) * 100);
 
 		.ic-hamburger-wrap{
 			justify-content: flex-end;

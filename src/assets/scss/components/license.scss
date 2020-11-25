@@ -53,11 +53,16 @@
 
 @media (max-width: 1389px) {
 	.license-list{
-		&__item{margin: 30px;}
+		&__item{
+			margin: 30px;
+			width: 250px;
+			height: 338px;
+			padding: 23px;
+		}
 	}
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 1189px) {
 	.license-list{
 		&__item{
 			width: 240px;

@@ -1,7 +1,11 @@
 /*-------------- about-company -----------------*/
 .about-company-wrap{
-	background: url(/assets/img/bg-company.jpg) no-repeat top center;
-	margin: 386px 0 63px;
+	padding-top: 40px;
+
+	&__content{
+		background: url(/assets/img/bg-company.jpg) no-repeat top center;
+		margin: 146px 0 63px;
+	}
 }
 
 .about-company{
@@ -44,7 +48,15 @@
 	}
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 1389px) {
+	.about-company-wrap{overflow: hidden;}
+	
+	.about-company{
+		&__img{right: -110px;}
+	}
+}
+
+@media (max-width: 1189px) {
 	.about-company-wrap{margin-top: 150px;}
 
 	.about-company{
