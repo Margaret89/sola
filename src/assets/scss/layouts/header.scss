@@ -227,7 +227,7 @@
 		// height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
 		// height: calc(var(--vh, 1vh) * 100);
 		background-image: url(/assets/img/bg-woman-mob.jpg);
-		background-position: center;
+		background-position: 100% 50%!important;
 
 		.ic-hamburger-wrap{
 			justify-content: flex-end;
@@ -255,10 +255,6 @@
 			}
 		}
 	}
-}
-
-@media (max-width: 375px) {
-	.header{background-position: 50%;}
 }
 
 @media (max-height: 800px) {

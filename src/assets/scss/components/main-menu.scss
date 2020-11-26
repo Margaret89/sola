@@ -51,7 +51,7 @@
 	&__logo{
 		margin-bottom: 63px;
 		opacity: 0;
-		transition: opacity 0.3s ease-out 0.6s;
+		// transition: opacity 0.3s ease-out 0.6s;
 
 		img{width: 150px;}
 	}
@@ -61,7 +61,7 @@
 		position: absolute;
 		top: 40px;
 		right: 0;
-		transition: opacity 0.3s ease-out 0.6s;
+		// transition: opacity 0.3s ease-out 0.6s;
 	}
 }
 
@@ -89,7 +89,8 @@ body.open-menu{
 
 		&__logo,
 		&__close{
-			opacity: 1;
+			// opacity: 1;
+			animation: menu-opacity 0.9s ease-out forwards;
 		}
 
 		&:before {
@@ -147,6 +148,12 @@ body.open-menu{
 	}
 }
 
+@keyframes menu-opacity {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
 @media (max-height: 750px) {
 	.main-nav{
 		&__logo{margin-bottom: 35px;}
@@ -154,6 +161,12 @@ body.open-menu{
 }
 
 @media (max-width: 767px) {
+	@keyframes menu-opacity {
+		0% {opacity: 0;}
+		30% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
 	.main-nav{
 		text-align: left;
 
@@ -168,7 +181,7 @@ body.open-menu{
 			position: relative;
 			margin-bottom: 30px;
 			opacity: 0;
-			transition: opacity 0.3s ease-out 0.6s;
+			// transition: opacity 0.3s ease-out 0.6s;
 		}
 
 		&__title::before{
@@ -214,8 +227,15 @@ body.open-menu{
 	body.open-menu{
 		.main-nav{
 			&__title,
-			.header-social{
-				opacity: 1;
+			.header-social,
+			&__logo,
+			&__close{
+				// opacity: 1;
+				animation: menu-opacity 0.6s ease-out forwards;
+			}
+
+			&:before {
+				animation: menu-animation 0.5s ease-out forwards;
 			}
 
 			.header-social{transform: translate3d(0,36px,0);}
