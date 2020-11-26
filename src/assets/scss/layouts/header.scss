@@ -20,8 +20,12 @@
 	}
 }
 
-.header-content-wrap{
-	&.fixed{
+.header.fixed{
+	clip-path: none;
+
+	.header__bg{display: none;}
+
+	.header-content-wrap{
 		width: 100%;
 		background: #fff;
 		border-bottom: 1px solid #e3e6db;

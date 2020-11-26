@@ -1,4 +1,4 @@
-header.header
+header.header.js-header
 	.header__bg
 	.header-content-wrap#header-content-wrap
 		.container
@@ -61,10 +61,20 @@ header.header
 
 							ul.main-menu
 								-
-									var list=['Уникальная технология', 'Этапы процедуры', 'Примеры работ', 'Отзывы', 'Стоимость', 'Врачи', 'FAQ', 'О компании', 'Контакты']
+									var list=[
+										{link:'#desc-service', text:'Уникальная технология'},
+										{link:'#about-procedures', text:'Этапы процедуры'},
+										{link:'#present-work', text:'Примеры работ'},
+										{link:'#review', text:'Отзывы'},
+										{link:'#prices', text:'Стоимость'},
+										{link:'#team', text:'Врачи'},
+										{link:'#faq', text:'FAQ'},
+										{link:'#about-company', text:'О компании'},
+										{link:'#contacts', text:'Контакты'},
+									]
 								each item in list
 									li.main-menu__item
-										a(href="#").main-menu__link= item
+										a(href=item.link).main-menu__link.js-link-move= item.text
 
 							.header-social
 								.header-social__item

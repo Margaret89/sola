@@ -40,14 +40,14 @@ function showHeaderScroll(selPos, fixedMenu) {
 					menuHidden = false;
 				}
 
-				$(fixedMenu).addClass('fixed');
+				$(fixedMenu).parents('.js-header').addClass('fixed');
 			} else if (sensorTopPos > 0) {
 				if (!menuHidden) {
 					$(fixedMenu).animate({ top: '0' }, { duration: 0, easing: 'linear' });
 					menuHidden = true;
 				}
 
-				$(fixedMenu).removeClass('fixed');
+				$(fixedMenu).parents('.js-header').removeClass('fixed');
 			}
 		});
 	}
@@ -172,7 +172,21 @@ $(window).on('scroll',function() {
 	});
 });
 
+// Плавный переход к ссылке
+if ($('.js-link-move').length) {
+	$('body').on('click','.js-link-move', function (event) {
+		event.preventDefault();
 
+		$('.js-body').removeClass('no-scroll open-menu');
+
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top - 100;
+		$('body,html').animate({scrollTop: top}, 500);
+
+		// Проверка наличия анимации
+		// productAnim(1);
+	});
+}
 
 
 // $(window).scroll(function(){
