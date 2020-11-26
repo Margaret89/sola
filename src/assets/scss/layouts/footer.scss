@@ -76,6 +76,7 @@
 	&__item:not(:last-child){margin-right: 15px;}
 
 	.icon{
+		vertical-align: top;
 		fill: $color-gold;
 		transition: all 0.3s ease 0s;
 	}
