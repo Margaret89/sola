@@ -1,9 +1,23 @@
 .header{
 	height: 100vh;
 	min-height: 100vh;
-	background: url(#{$path-img}/bg-woman.jpg) no-repeat calc(50% - 320px) 50%;
+	// overflow: hidden;
+	clip-path: inset(0);
+	background-image: url(#{$path-img}/bg-woman.jpg);
+	background-repeat: no-repeat;
+	background-position: calc(50% - 320px) 50%;
 	background-size: cover;
-	background-attachment: fixed;
+
+	&__bg{
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		background: url(#{$path-img}/bg-woman.jpg) no-repeat calc(50% - 320px) 50%;
+		background-size: cover;
+	}
 }
 
 .header-content-wrap{
@@ -228,6 +242,12 @@
 		// height: calc(var(--vh, 1vh) * 100);
 		background-image: url(/assets/img/bg-woman-mob.jpg);
 		background-position: 100% 50%!important;
+
+		&__bg{
+			background-image: url(/assets/img/bg-woman-mob.jpg);
+			background-position: 100% 50%!important;
+		}
+		
 
 		.ic-hamburger-wrap{
 			justify-content: flex-end;
