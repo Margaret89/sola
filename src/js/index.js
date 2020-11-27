@@ -54,7 +54,16 @@ function showHeaderScroll(selPos, fixedMenu) {
 }
 
 // Высота шапки для мобильных браузеров
-// let vh = window.innerHeight * 0.01;
+headerHeight();
+$(window).on('resize', function(){
+	headerHeight();
+});
+
+function headerHeight() {
+	var vh = $(window).innerHeight();
+	$('.js-header').css('height',vh+'px');
+}
+
 // document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // Слайдер процедур

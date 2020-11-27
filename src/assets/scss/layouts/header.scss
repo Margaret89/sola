@@ -161,6 +161,12 @@
 	}
 }
 
+@media (max-width: 991px) {
+	.header-content{
+		&__feedback{bottom: 100px;}
+	}
+}
+
 @media (max-width: 767px) {
 	.header-social{display: none;}
 
