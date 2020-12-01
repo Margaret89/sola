@@ -282,6 +282,16 @@
 
 				&__logo{text-align: left;}
 				&__logo-small{width: 110px;}
+
+				&__phone{
+					position: fixed;
+					bottom: 20px;
+					right: 15px;
+					z-index: 10;
+					background: $color-green;
+
+					.icon{fill: #fff;}
+				}
 			}
 		}
 	}
